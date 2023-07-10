@@ -1,0 +1,14 @@
+.menu {
+  // .menu__list
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+  // .menu__list-item
+  &__list-item {
+  }
+  // .menu__list-link
+  &__list-link {
+    text-transform: uppercase;
+  }
+}

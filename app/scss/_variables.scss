@@ -1,0 +1,29 @@
+// COLORS
+// -| backgrounds |-
+$bg-color: #fff8f3;
+// END COLORS
+
+// ==| VIEWPORTS |==
+
+$desktop-width: 1339px;
+$laptop-width: 999px;
+$tablet-width: 767px;
+$mobile-width: 479px;
+
+// ==| / VIEWPORTS |==
+
+// ==| FONTS |==
+%main-font-400 {
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400;
+}
+%main-font-600 {
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 600;
+}
+
+%title-font-400 {
+  font-family: "Yeseva One", serif;
+  font-weight: 400;
+}
+// ==| / FONTS |==

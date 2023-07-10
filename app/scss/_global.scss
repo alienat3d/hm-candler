@@ -1,0 +1,76 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  @extend %main-font-400;
+  color: #000;
+  font-weight: 400;
+  min-width: 320px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+// img {
+//   max-width: 100%;
+//   height: auto;
+// }
+// -|* Container *|-
+.container {
+  width: 340px;
+  margin: 0 auto;
+  padding: 0 10px;
+  @media (min-width: $mobile-width) {
+    width: 460px;
+  }
+  @media (min-width: $tablet-width) {
+    width: 640px;
+    padding: 0 64px;
+  }
+  @media (min-width: $laptop-width) {
+    width: 960px;
+    padding: 0 20px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 1160px;
+  }
+}
+// -|* Visually Hidden *|-
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/*
+img {
+  vertical-align: top;
+}
+.page {
+  height: 100%;
+}
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+ */

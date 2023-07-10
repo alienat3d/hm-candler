@@ -1,0 +1,19 @@
+@import 'reset'; // сброс стилей
+@import 'fonts'; // подключаем шрифты (локально)
+@import 'variables'; // переменные
+@import 'global'; // общие стили
+
+//подключаем БЭМ блоки
+@import 'blocks/header';
+@import 'blocks/menu';
+
+// -| Sticky Footer |-
+/* .wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 1 auto;
+} */
