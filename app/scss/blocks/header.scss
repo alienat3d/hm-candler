@@ -1,10 +1,29 @@
 .header {
   background-color: $bg-color;
-  // .header__inner
-  &__inner {
-    padding-top: 4px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+}
+.header__inner {
+  padding-top: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__inner .phone {
+  position: relative;
+  padding-left: 23px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/phone.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform $fast-transition ease-in-out;
+  }
+  &:hover::before {
+    transform: scale(1.2);
   }
 }

@@ -2,16 +2,17 @@
 // -| backgrounds |-
 $bg-color: #fff8f3;
 // END COLORS
-
 // ==| VIEWPORTS |==
-
 $desktop-width: 1339px;
 $laptop-width: 999px;
 $tablet-width: 767px;
 $mobile-width: 479px;
-
 // ==| / VIEWPORTS |==
-
+// ==| TRANSITIONS |==
+$slow-transition: .7s;
+$regular-transition: .5s;
+$fast-transition: .3s;
+// ==| / TRANSITIONS |==
 // ==| FONTS |==
 %main-font-400 {
   font-family: "Comfortaa", sans-serif;

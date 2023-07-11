@@ -1,9 +1,8 @@
-@import 'reset'; // сброс стилей
-@import 'fonts'; // подключаем шрифты (локально)
-@import 'variables'; // переменные
-@import 'global'; // общие стили
-
-//подключаем БЭМ блоки
+@import 'reset'; // reset styles
+@import 'fonts'; // local fonts
+@import 'variables'; // variables
+@import 'global'; // global styles
+// BEM-blocks:
 @import 'blocks/header';
 @import 'blocks/menu';
 
