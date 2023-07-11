@@ -1,14 +1,13 @@
-.menu {
-  // .menu__list
-  &__list {
-    display: flex;
-    gap: 20px;
-  }
-  // .menu__list-item
-  &__list-item {
-  }
-  // .menu__list-link
-  &__list-link {
-    text-transform: uppercase;
-  }
+.menu__list {
+  display: flex;
+  gap: 20px;
+}
+.menu__list-item {
+  text-transform: uppercase;
+  transition: all $fast-transition ease-in-out;
+}
+.menu__list-item:active,
+.menu__list-item:focus,
+.menu__list-item:hover {
+  color: $accent-color;
 }

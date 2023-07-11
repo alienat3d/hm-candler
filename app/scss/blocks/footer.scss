@@ -1,0 +1,40 @@
+.footer__inner {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $dark-color;
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  color: $dark-color;
+}
+.footer__phone {
+  margin-bottom: 15px;
+}
+.footer__email {
+  margin-bottom: 20px;
+}
+.footer__socials {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+.footer__contacts > a,
+.footer__socials-item {
+  transition: color $fast-transition ease-in-out;
+}
+.footer__socials-item:hover,
+.footer__socials-item:active,
+.footer__socials-item:focus,
+.footer__phone:hover,
+.footer__phone:active,
+.footer__phone:focus,
+.footer__email:hover,
+.footer__email:active,
+.footer__email:focus {
+  color: $accent-color;
+}
