@@ -1,6 +1,7 @@
 // COLORS
 $dark-color: #333;
 $accent-color: #7B6152;
+$bright-accent-color: #FFBD59;
 // -| backgrounds |-
 $bg-color: #fff8f3;
 // END COLORS
@@ -8,7 +9,8 @@ $bg-color: #fff8f3;
 $desktop-width: 1339px;
 $laptop-width: 999px;
 $tablet-width: 767px;
-$mobile-width: 479px;
+$mobile-large-width: 479px;
+$mobile-small-width: 359px;
 // ==| / VIEWPORTS |==
 // ==| TRANSITIONS |==
 $slow-transition: .7s;

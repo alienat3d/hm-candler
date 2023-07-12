@@ -10,20 +10,25 @@
 .header__inner .phone {
   position: relative;
   padding-left: 23px;
+  transition: all $fast-transition ease-in-out;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     width: 20px;
     height: 20px;
-    background-image: url('../img/phone.svg');
+    background-image: url("../img/icons/phone.svg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     transition: transform $fast-transition ease-in-out;
   }
-  &:hover::before {
+  &:hover::before,
+  &:focus::before {
     transform: scale(1.2);
+  }
+  &:active {
+    color: $bright-accent-color;
   }
 }

@@ -28,13 +28,12 @@
   transition: color $fast-transition ease-in-out;
 }
 .footer__socials-item:hover,
-.footer__socials-item:active,
 .footer__socials-item:focus,
-.footer__phone:hover,
-.footer__phone:active,
-.footer__phone:focus,
-.footer__email:hover,
-.footer__email:active,
-.footer__email:focus {
+.footer__contacts > a:hover,
+.footer__contacts > a:focus {
   color: $accent-color;
+}
+.footer__socials-item:active,
+.footer__contacts > a:active {
+  color: $bright-accent-color;
 }

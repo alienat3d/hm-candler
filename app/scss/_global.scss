@@ -26,19 +26,24 @@ a {
 // }
 // -|* Container *|-
 .container {
-  width: 340px;
   margin: 0 auto;
-  padding: 0 10px;
-  @media (min-width: $mobile-width) {
+  padding: 0 5px;
+  width: 310px;
+  @media (min-width: $mobile-small-width) {
+    padding: 0 10px;
+    width: 340px;
+  }
+  @media (min-width: $mobile-large-width) {
+    padding: 0 10px;
     width: 460px;
   }
   @media (min-width: $tablet-width) {
-    width: 640px;
     padding: 0 64px;
+    width: 640px;
   }
   @media (min-width: $laptop-width) {
-    width: 960px;
     padding: 0 20px;
+    width: 960px;
   }
   @media (min-width: $desktop-width) {
     width: 1160px;
