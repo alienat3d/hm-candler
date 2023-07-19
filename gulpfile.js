@@ -118,6 +118,12 @@ function fonts() {
   return src(sourceFolder + "/fonts/*.*").pipe(dest(buildFolder + "/fonts"));
 };
 
+function misc() {
+  return src(sourceFolder + "/misc/**/*.*")
+    .pipe(cachebust({ type: "timestamp" }))
+    .pipe(dest(buildFolder + "/favicons"));
+};
+
 function clear() {
   return del(buildFolder)
 };
@@ -132,7 +138,7 @@ function serve() {
     reloadOnRestart: true,
     server: {
       baseDir: buildFolder,
-      directory: true, // чтобы загружался сразу index.html поменять на "false"
+      directory: false, // чтобы загружался сразу index.html поменять на "false"
     },
     notify: false, // чтобы всплывало сообщение об обновлении браузера поменять на "true"
   });
@@ -144,11 +150,12 @@ function serve() {
   watch(sourceFolder + '/img/**/*', series(svg)).on('change', sync.reload)
   watch(sourceFolder + '/img/icons/**/*', series(sprite)).on('change', sync.reload)
   watch(sourceFolder + '/fonts/**/*', series(fonts)).on('change', sync.reload)
+  watch(sourceFolder + '/misc/**/*', series(misc)).on('change', sync.reload)
 };
 
 
-exports.build = series(clear, scss, js, img, sprite, fonts, html, clearBlocksDir);
-exports.default = series(clear, scss, js, img, svg, sprite, fonts, html, serve);
+exports.build   = series(clear, scss, js, img, svg, sprite, fonts, html, misc, clearBlocksDir);
+exports.default = series(clear, scss, js, img, svg, sprite, fonts, html, misc, serve);
 exports.fonts = convertFonts;
 exports.bem = bem;
 exports.clear = clear;
