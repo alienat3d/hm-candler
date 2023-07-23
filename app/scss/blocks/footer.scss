@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  background-color: #fff;
   color: $dark-color;
 
   @media (max-width: 900px) {
@@ -59,6 +60,7 @@
 }
 .footer__contacts > a,
 .footer__socials-item {
+  cursor: pointer;
   transition: color $fast-transition ease-in-out;
 }
 .footer__socials-item:hover,

@@ -1,9 +1,11 @@
 // COLORS
 $dark-color: #333;
+$btn-text-color: #272727;
 $accent-color: #7B6152;
 $bright-accent-color: #FFBD59;
 // -| backgrounds |-
-$bg-color: #fff8f3;
+
+$main-bg-color: #fff8f3;
 // END COLORS
 // ==| VIEWPORTS |==
 $desktop-width: 1339px;
@@ -19,17 +21,17 @@ $regular-transition: .5s;
 $fast-transition: .3s;
 // ==| / TRANSITIONS |==
 // ==| FONTS |==
-%main-font-400 {
-  font-family: "Comfortaa", sans-serif;
+@mixin main-font-400 {
+  font-family: "Comfortaa", cursive;
   font-weight: 400;
 }
-%main-font-600 {
-  font-family: "Comfortaa", sans-serif;
+@mixin main-font-600 {
+  font-family: "Comfortaa", cursive;
   font-weight: 600;
 }
 
-%title-font-400 {
-  font-family: "Yeseva One", serif;
+@mixin title-font-400 {
+  font-family: 'Yeseva One', cursive;
   font-weight: 400;
 }
 // ==| / FONTS |==

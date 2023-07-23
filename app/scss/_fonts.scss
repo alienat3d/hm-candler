@@ -1,6 +1,6 @@
 // === Comfortaa ===
 @font-face {
-  font-family: "Comfortaa", sans-serif;
+  font-family: "Comfortaa";
   font-weight: 400;
   font-style: normal;
   src: local("Comfortaa-Regular"), local("Comfortaa Regular"),
@@ -9,7 +9,7 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "Comfortaa", sans-serif;
+  font-family: "Comfortaa";
   font-weight: 600;
   font-style: normal;
   src: local("Comfortaa-SemiBold"), local("Comfortaa SemiBold"),
@@ -20,11 +20,11 @@
 
 // === Yeseva One ===
 @font-face {
-  font-family: "Yeseva One", serif;
+  font-family: "Yeseva One";
   font-weight: 400;
   font-style: normal;
-  src: local("YesevaOne-Regular"), local("YesevaOne Regular"),
+  font-display: swap;
+  src: local("YesevaOne-Regular"), local("Yeseva One"),
     url("../fonts/yeseva-one-regular.woff2") format("woff2"),
     url("../fonts/yeseva-one-regular.woff") format("woff");
-  font-display: swap;
 }

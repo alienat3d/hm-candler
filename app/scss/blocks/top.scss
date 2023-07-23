@@ -1,0 +1,129 @@
+.top {
+  margin-bottom: 150px;
+  min-height: 670px;
+  padding-top: 40px;
+  padding-bottom: 150px;
+
+  @media (max-width: $mobile-large-width) {
+    padding-bottom: 50px;
+    min-height: 309px;
+  }
+  @media (max-width: $mobile-large-width) {
+    margin-bottom: 50px;
+  }
+  @media (max-width: $mobile-small-width) {
+    margin-bottom: 30px;
+    padding-top: 0;
+  }
+}
+
+.top__inner {
+  position: relative;
+}
+
+.top__content {
+  width: 370px;
+  padding-top: 150px;
+
+  @media (max-width: $laptop-width) {
+    width: 333px;
+    padding-top: 81px;
+  }
+  @media (max-width: $tablet-width) {
+    width: 230px;
+    padding-top: 89px;
+  }
+  @media (max-width: $mobile-large-width) {
+    width: 180px;
+    padding-top: 69px;
+  }
+  @media (max-width: $mobile-small-width) {
+    width: 200px;
+    padding-top: 61px;
+  }
+}
+
+.top__title {
+  margin-bottom: 15px;
+  @include title-font-400;
+  font-size: 30px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  @media (max-width: $mobile-large-width) {
+    margin-bottom: 15px;
+    font-size: 15px;
+  }
+  @media (max-width: $mobile-small-width) {
+    font-size: 18px;
+  }
+}
+
+.top__text {
+  margin-bottom: 48px;
+  line-height: 1.5;
+
+  @media (max-width: $laptop-width) {
+    margin-bottom: 30px;
+    max-width: 300px;
+  }
+  @media (max-width: $tablet-width) {
+    margin-bottom: 20px;
+    font-size: 10px;
+  }
+  @media (max-width: $mobile-large-width) {
+    margin-bottom: 15px;
+    font-size: 8px;
+  }
+  @media (max-width: $mobile-small-width) {
+    font-size: 10px;
+    line-height: 1.2;
+  }
+}
+
+.top__buy {
+  padding: 20px 46px;
+  background-color: $bright-accent-color;
+  @include main-font-600;
+  font-size: 14px;
+  color: $btn-text-color;
+
+  @media (max-width: $tablet-width) {
+    padding: 15px 31px;
+  }
+  @media (max-width: $mobile-large-width) {
+    padding: 11px 23px;
+    font-size: 11px;
+  }
+}
+
+.top__img {
+  position: absolute;
+  top: 0;
+  left: 240px;
+
+  @media (max-width: $laptop-width) {
+    top: -13px;
+    left: 313px;
+    width: 655px;
+  }
+  @media (max-width: $tablet-width) {
+    left: 194px;
+  }
+  @media (max-width: $mobile-large-width) {
+    top: -10px;
+    left: auto;
+    right: 0;
+    width: 309px;
+  }
+  @media (max-width: 395px) {
+    width: 162px;
+    top: 15px;
+  }
+  @media (max-width: 338px) {
+    width: 140px;
+    top: 40px;
+  }
+}
