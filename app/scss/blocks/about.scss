@@ -1,0 +1,67 @@
+.about {
+  padding: 50px 0 60px;
+  background-color: $alt-bg-color;
+  color: $beige-color;
+}
+
+.about__inner {
+  display: flex;
+}
+
+.about__content {
+  margin-top: 78px;
+  min-width: 370px;
+}
+
+.about__title {
+  margin-bottom: 13px;
+  @include title-font-400;
+  font-size: 40px;
+}
+
+.about__text {
+  margin-bottom: 15px;
+}
+
+.about__photos {
+  position: relative;
+  padding-bottom: 48px;
+  padding-left: 110px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 0 20px;
+}
+.about__photos::before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: -21px;
+  width: 22px;
+  height: 30px;
+  background-image: url("../img/candle.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 0;
+}
+.about__photos::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: $accent-color;
+  width: 1000%;
+  height: 1px;
+}
+
+.about__photos-item {
+}
+
+.about__photos-img {
+  margin-bottom: 10px;
+}
+
+.about__photos-title {
+  font-size: 11px;
+}
