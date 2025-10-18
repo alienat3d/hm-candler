@@ -30,8 +30,24 @@ body {
   @media (max-width: $tablet-width) {
     font-size: 12px;
   }
+
+  @media (max-width: $mobile-large-width) {
+    font-size: 11px;
+  }
 }
 
+.title {
+  @include title-font-400;
+  margin-bottom: 15px;
+  font-size: 40px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 30px;
+  }
+  @media (max-width: $mobile-large-width) {
+    font-size: 18px;
+  }
+}
 
 // img {
 //   max-width: 100%;

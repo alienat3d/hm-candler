@@ -1,25 +1,25 @@
 // COLORS
 $dark-color: #333;
 $btn-text-color: #272727;
-$accent-color: #7B6152;
-$bright-accent-color: #FFBD59;
-$beige-color: #FAFAFA;
+$accent-color: #7b6152;
+$bright-accent-color: #ffbd59;
+$beige-color: #fafafa;
 // -| backgrounds |-
-$alt-bg-color: #A5978E;
+$alt-bg-color: #a5978e;
 $main-bg-color: #fff8f3;
 // END COLORS
 // ==| VIEWPORTS |==
-$desktop-width: 1339px;
-$laptop-width: 999px;
-$tablet-width: 767px;
-$mobile-large-width: 479px;
-$mobile-small-width: 359px;
+$desktop-width: 1340px;
+$laptop-width: 1000px;
+$tablet-width: 768px;
+$mobile-large-width: 480px;
+$mobile-small-width: 360px;
 $mobile-smallest-width: 320px;
 // ==| / VIEWPORTS |==
 // ==| TRANSITIONS |==
-$slow-transition: .7s;
-$regular-transition: .5s;
-$fast-transition: .3s;
+$slow-transition: 0.7s;
+$regular-transition: 0.5s;
+$fast-transition: 0.3s;
 // ==| / TRANSITIONS |==
 // ==| FONTS |==
 @mixin main-font-400 {
@@ -32,7 +32,7 @@ $fast-transition: .3s;
 }
 
 @mixin title-font-400 {
-  font-family: 'Yeseva One', cursive;
+  font-family: "Yeseva One", cursive;
   font-weight: 400;
 }
 // ==| / FONTS |==

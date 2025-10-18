@@ -2,6 +2,10 @@
   padding: 50px 0 60px;
   background-color: $alt-bg-color;
   color: $beige-color;
+
+  @media (max-width: $tablet-width) {
+    padding: 45px 0 40px;
+  }
 }
 
 .about__inner {
@@ -11,16 +15,35 @@
 .about__content {
   margin-top: 78px;
   min-width: 370px;
+
+  @media (max-width: $laptop-width) {
+    min-width: 300px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-top: 0;
+    min-width: 200px;
+  }
 }
 
 .about__title {
   margin-bottom: 13px;
   @include title-font-400;
-  font-size: 40px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+  @media (max-width: $mobile-large-width) {
+    margin-bottom: 15px;
+  }
 }
 
 .about__text {
   margin-bottom: 15px;
+
+  @media (max-width: $mobile-large-width) {
+    margin-bottom: 10px;
+  }
 }
 
 .about__photos {
@@ -31,12 +54,22 @@
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 0 20px;
+  column-gap: 20px;
+
+  @media (max-width: $laptop-width) {
+    padding-left: 24px;
+    margin-bottom: 33px;
+    column-gap: 9px;
+  }
+  @media (max-width: $mobile-large-width) {
+    column-gap: 5px;
+    align-items: flex-end;
+  }
 }
 .about__photos::before {
   content: "";
   position: absolute;
-  bottom: -4px;
+  bottom: -3px;
   left: -21px;
   width: 22px;
   height: 30px;
@@ -44,6 +77,11 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 0 0;
+
+  @media (max-width: $tablet-width) {
+    left: 23px;
+    bottom: -14px;
+  }
 }
 .about__photos::after {
   content: "";
@@ -53,15 +91,41 @@
   background-color: $accent-color;
   width: 1000%;
   height: 1px;
+
+  @media (max-width: $tablet-width) {
+    left: 44px;
+    bottom: -11px;
+  }
 }
 
 .about__photos-item {
 }
+.about__photos-item:nth-child(1),
+.about__photos-item:nth-child(3) {
+  @media (max-width: $laptop-width) {
+    margin-bottom: -29px;
+  }
+  @media (max-width: $mobile-large-width) {
+    margin-bottom: 0;
+  }
+}
+.about__photos-item:nth-child(2) {}
 
 .about__photos-img {
   margin-bottom: 10px;
+
+  @media (max-width: $laptop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .about__photos-title {
   font-size: 11px;
+
+  @media (max-width: $laptop-width) {
+    font-size: 10px;
+  }
+  @media (max-width: $mobile-large-width) {
+    display: none;
+  }
 }

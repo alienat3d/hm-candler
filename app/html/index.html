@@ -1,92 +1,101 @@
 <!DOCTYPE html>
 <html lang="uk">
+  <head>
+    <!-- ==| META |== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ==| / META |== -->
+    <title>HM Candler ~ Головна</title>
+    <!-- ==| FAVICONS |== -->
+    <link rel="icon" type="image/png" href="./img/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./img/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="./img/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="HM-Candler" />
+    <link rel="manifest" href="./img/favicons/site.webmanifest" />
+    <!-- ==| / FAVICONS |== -->
+    <!-- ==| CSS |== -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <!-- ==| / CSS |== -->
+  </head>
 
-<head>
-  <!-- ==| META |== -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- ==| / META |== -->
-  <title>HM Candler ~ Головна</title>
-  <!-- ==| FAVICONS |== -->
-  <link rel="icon" type="image/svg+xml" href="favicons/favicon.svg">
-  <link rel="icon" type="image/png" href="favicons/favicon.png">
-  <!-- ==| / FAVICONS |== -->
-  <!-- ==| CSS |== -->
-  <link rel="stylesheet" href="css/main.min.css">
-  <!-- ==| / CSS |== -->
-</head>
-
-<body>
-
-  <!-- === HEADER === -->
-  @@include('blocks/header.html')
-  <!-- === / HEADER === -->
-  <main class="main">
-    <!-- === TOP === -->
-    <section class="top">
-      <div class="container  top__inner">
-        <div class="top__content">
-          <h3 class="top__title">Створіть атмосферу затишку та гармонії!</h3>
-          <p class="top__text">
-            Створіть особливу атмосферу у своєму домі з нашою екологічно чистою та якісною продукцією зі 100%
-            натуральної соєвого воску.
-          </p>
-          <button class="top__buy">Купити</button>
-          <picture class="top__picture">
-            <source srcset="img/top-small.png" media="(max-width: 395px)">
-            <source srcset="img/top-middle.png" media="(max-width: 480px)">
-            <img class="top__img" src="img/top-large.png" alt="Декоративні заднього фону з фотографіями продукції">
-          </picture>
+  <body>
+    <!-- === HEADER === -->
+    @@include('blocks/header.html')
+    <!-- === / HEADER === -->
+    <main class="main">
+      <!-- === TOP === -->
+      <section class="top">
+        <div class="container top__inner">
+          <div class="top__content">
+            <h3 class="top__title">Створіть атмосферу затишку та гармонії!</h3>
+            <p class="top__text">
+              Створіть особливу атмосферу у своєму домі з нашою екологічно
+              чистою та якісною продукцією зі 100% натуральної соєвого воску.
+            </p>
+            <button class="top__buy">Купити</button>
+            <picture class="top__picture">
+              <source type="image/png" srcset="./img/top-small.png" media="(max-width: 395px)" />
+              <source type="image/png" srcset="./img/top-middle.png" media="(max-width: 480px)" />
+              <img class="top__img" src="./img/top-large.png" alt="Декоративні заднього фону з фотографіями продукції"/>
+            </picture>
+          </div>
         </div>
-      </div>
-    </section>
-    <!-- === / TOP === -->
-    <!-- === ABOUT === -->
-    <section class="about">
-      <div class="container  about__inner">
-        <div class="about__content">
-          <h2 class="about__title">Про нас</h2>
-          <p class="about__text">
-            Богдан творець бренду який завжди зацікавлений у виготовленні різноманітних речей вдома. Він регулярно
-            експериментував з різними матеріалами та інструментами, спробувавши свої сили у багатьох галузях, включаючи
-            виготовлення свічок.
-          </p>
-          <p class="about__text">
-            Ссоєвий віск виготовляють із соєвих бобів, що зрощуються в Данії, і цей вид воску є екологічно чистим та
-            безпечним для здоров'я.
-          </p>
-        </div>
-        <ul class="about__photos">
-          <li class="about__photos-item">
-            <img class="about__photos-img" src="img/about-1.jpg" alt="Запалена свічка у вигляді красивої жіночої фігури">
+      </section>
+      <!-- === / TOP === -->
+      <!-- === ABOUT === -->
+      <section class="about">
+        <div class="container about__inner">
+          <div class="about__content">
+            <h2 class="title about__title">Про нас</h2>
+            <p class="about__text">
+              Богдан творець бренду який завжди зацікавлений у виготовленні
+              різноманітних речей вдома. Він регулярно експериментував з різними
+              матеріалами та інструментами, спробувавши свої сили у багатьох
+              галузях, включаючи виготовлення свічок.
+            </p>
+            <p class="about__text">
+              Соєвий віск виготовляють із соєвих бобів, що зрощуються в Данії,
+              і цей вид воску є екологічно чистим та безпечним для здоров'я.
+            </p>
+          </div>
+          <ul class="about__photos">
+            <li class="about__photos-item">
+              <picture>
+                <source type="image/jpeg" srcset="./img/about-1-small.jpg" media="(max-width: 480px)" width="80" height="80" />
+                <source type="image/jpeg" srcset="./img/about-1-middle.jpg" media="(max-width: 768px)"  width="119" height="119" />
+                <img class="about__photos-img" src="./img/about-1.jpg" alt="Запалена свічка у вигляді красивої жіночої фігури" width="214" height="219" />
+              </picture>
               <p class="about__photos-title">Насолоджуйтеся моментом</p>
-            </img>
-          </li>
-          <li class="about__photos-item">
-            <img class="about__photos-img" src="img/about-2.png" alt="Запалена свічка у вигляді красивої жіночої фігури (інший ракурс)">
+            </li>
+            <li class="about__photos-item">
+              <picture>
+                <source type="image/png" srcset="./img/about-2-small.png" media="(max-width: 480px)" width="139" height="140" />
+                <source type="image/png" srcset="./img/about-2-middle.png" media="(max-width: 768px)"  width="192" height="195" />
+                <img class="about__photos-img" src="./img/about-2.png" alt="Запалена свічка у вигляді красивої жіночої фігури (інший ракурс)" width="347" height="354"/>
+              </picture>
               <p class="about__photos-title">Створіть улюблену атмосферу</p>
-            </img>
-          </li>
-          <li class="about__photos-item">
-            <img class="about__photos-img" src="img/about-3.jpg" alt="Дві свічки у вигляді красивої жіночої фігури">
+            </li>
+            <li class="about__photos-item">
+              <picture>
+                <source type="image/jpeg" srcset="./img/about-3-small.jpg" media="(max-width: 480px)" width="80" height="80" />
+                <source type="image/jpeg" srcset="./img/about-3-middle.jpg" media="(max-width: 768px)"  width="120" height="120" />
+                <img class="about__photos-img" src="./img/about-3.jpg" alt="Дві свічки у вигляді красивої жіночої фігури" width="214" height="217"/>
+              </picture>
               <p class="about__photos-title">Виготовлені з любов'ю</p>
-            </img>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- === / ABOUT === -->
-    <!-- === SECTIONname === -->
-    <section class="SECTIONname">
-
-    </section>
-    <!-- === / SECTIONname === -->
-  </main>
-  <!-- === FOOTER === -->
-  @@include('blocks/footer.html')
-  <!-- === / FOOTER === -->
-  <!-- === JAVASCRIPT === -->
-  <script src="js/main.min.js"></script>
-</body>
-
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- === / ABOUT === -->
+      <!-- === SECTIONname === -->
+      <section class="SECTIONname"></section>
+      <!-- === / SECTIONname === -->
+    </main>
+    <!-- === FOOTER === -->
+    @@include('blocks/footer.html')
+    <!-- === / FOOTER === -->
+    <!-- === JAVASCRIPT === -->
+    <script src="js/main.min.js"></script>
+  </body>
 </html>
