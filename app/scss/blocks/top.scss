@@ -1,13 +1,12 @@
 .top {
   position: relative;
-  margin-bottom: 150px;
-  padding-top: 43px;
-  padding-bottom: 150px;
-  min-height: 670px;
+  margin-top: 55px;
+  margin-bottom: 350px;
 
+  @media (max-width: $laptop-width) {
+    margin-bottom: 185px;
+  }
   @media (max-width: $mobile-large-width) {
-    padding-bottom: 50px;
-    min-height: 309px;
   }
   @media (max-width: $mobile-large-width) {
     margin-bottom: 50px;
@@ -91,6 +90,12 @@
   right: -171px;
   width: 1069px;
   height: 655px;
+
+  @media (max-width: $laptop-width) {
+    right: 16px;
+    width: 655px;
+    height: 415px;
+  }
 }
 
 .top__bg-decor {
@@ -99,62 +104,132 @@
   left: 23px;
   width: 656px;
   height: 649px;
-  background: url('../img/top/crossed-ellipses.svg') no-repeat center/contain;
-  animation: rotate 40s linear infinite;
+  background: url("../img/top/crossed-ellipses.svg") no-repeat center/contain;
+
+  @media (max-width: $laptop-width) {
+    top: -16px;
+    left: 11px;
+    width: 405px;
+    height: 402px;
+  }
 }
 
 .top__bg-part {
+  // Define animation duration and timing
+  $single-cycle: 4s; // Time for one element's brighten+darken cycle
+  $sequence-delay: 3s; // When next element should start (at 75% of cycle)
+  $total-elements: 6; // Number of elements
+
+  // Calculate total animation time:
+  // Last element starts at: $sequence-delay * 5 (5 gaps)
+  // Last element finishes at: ($sequence-delay * 5) + $single-cycle
+  // Total time needed: 15s + 4s = 19s
+  // $last-element-start: $sequence-delay * ($total-elements - 1); // 15s
+  // $total-duration: $last-element-start + $single-cycle; // 19s
+  $total-duration: 19s;
+
   position: absolute;
   background-repeat: no-repeat;
   background-size: contain;
-  filter: brightness(0.9);
-  transition: filter .3s linear;
-
-  &:hover {
-    filter: brightness(1);
-  }
+  filter: brightness(0.8);
+  transition: filter 0.3s linear;
+  animation: brighten $total-duration ease-in-out infinite;
 }
 .top__bg-part--1 {
   bottom: -17px;
   left: -15px;
   width: 264px;
   height: 308px;
-  background-image: url('../img/top/desktop-bg-part-1.png');
+  background-image: url("../img/top/desktop-bg-part-1.png");
+  animation-delay: 0s;
+
+  @media (max-width: $laptop-width) {
+    bottom: -17px;
+    left: -21px;
+    width: 184px;
+    height: 214px;
+    background-image: url("../img/top/laptop-bg-part-1.png");
+  }
 }
 .top__bg-part--2 {
   top: 42px;
   left: 189px;
   width: 361px;
   height: 501px;
-  background-image: url('../img/top/desktop-bg-part-2.png');
+  background-image: url("../img/top/desktop-bg-part-2.png");
+  animation-delay: 3s;
+
+  @media (max-width: $laptop-width) {
+    top: 10px;
+    left: 102px;
+    width: 246px;
+    height: 332px;
+    background-image: url("../img/top/laptop-bg-part-2.png");
+  }
 }
 .top__bg-part--3 {
   top: -22px;
   right: 265px;
   width: 262px;
   height: 287px;
-  background-image: url('../img/top/desktop-bg-part-3.png');
+  background-image: url("../img/top/desktop-bg-part-3.png");
+  animation-delay: 6s;
+
+  @media (max-width: $laptop-width) {
+    top: -33px;
+    right: 152px;
+    width: 182px;
+    height: 199px;
+    background-image: url("../img/top/laptop-bg-part-3.png");
+  }
 }
 .top__bg-part--4 {
   right: 61px;
   bottom: 8px;
   width: 326px;
   height: 351px;
-  background-image: url('../img/top/desktop-bg-part-4.png');
+  background-image: url("../img/top/desktop-bg-part-4.png");
+  animation-delay: 9s;
+
+  @media (max-width: $laptop-width) {
+    right: 58px;
+    bottom: -20px;
+    width: 223px;
+    height: 240px;
+    background-image: url("../img/top/laptop-bg-part-4.png");
+  }
 }
 .top__bg-part--5 {
   top: 28px;
   right: 59px;
   width: 240px;
   height: 320px;
-  background-image: url('../img/top/desktop-bg-part-5.png');
+  background-image: url("../img/top/desktop-bg-part-5.png");
+  animation-delay: 12s;
+
+  @media (max-width: $laptop-width) {
+    top: 28px;
+    right: 59px;
+    width: 170px;
+    height: 221px;
+    background-image: url("../img/top/laptop-bg-part-5.png");
+  }
 }
 .top__bg-part--6 {
   right: 358px;
   bottom: -23px;
   width: 234px;
   height: 304px;
-  background-image: url('../img/top/desktop-bg-part-6.png');
+  background-image: url("../img/top/desktop-bg-part-6.png");
+  animation-delay: 15s;
+
+  @media (max-width: $laptop-width) {
+    right: 233px;
+    bottom: -63px;
+    width: 164px;
+    height: 208px;
+    background-image: url("../img/top/laptop-bg-part-6.png");
+  }
 }
 
 .top__img {

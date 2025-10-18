@@ -1,11 +1,34 @@
-html {
-  box-sizing: border-box;
+:root {
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  border: 3px solid $main-bg-color;
+  background-color: $accent-color;
+  transition: all .5s linear;
+
+  &:hover {
+    background-color: $bright-accent-color;
+  }
+}
+*::-webkit-scrollbar-track {
+  border-radius: 16px;
+  background-color: $main-bg-color;
 }
 
 *,
 *::after,
 *::before {
   box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
 }
 
 a {
@@ -64,8 +87,9 @@ body {
   @include main-font-600;
   font-size: 14px;
   color: $btn-text-color;
-  box-shadow: 3px -3px 0px 0.5px rgba(187,165,152);
-  transition: box-shadow .1s ease-in, transform .1s ease-in, background-color .25s linear;
+  box-shadow: 3px -3px 0px 0.5px rgba(187, 165, 152);
+  transition: box-shadow 0.1s ease-in, transform 0.1s ease-in,
+    background-color 0.25s linear;
 
   @media (max-width: $tablet-width) {
     padding: 15px 31px;
@@ -79,7 +103,7 @@ body {
   background-color: darken($bright-accent-color, 5%);
 }
 .button:active {
-  box-shadow: 0px 0px 0px 0px rgba(187,165,152);
+  box-shadow: 0px 0px 0px 0px rgba(187, 165, 152);
   transform: translate(3px, -3px);
 }
 

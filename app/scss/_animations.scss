@@ -1,0 +1,27 @@
+@keyframes brighten {
+  // Element 1: 0s-4s out of 19s total = 0%-21%
+  // Brighten: 0%-5.26% (1s)
+  // Hold: 5.26%-15.79% (2s)
+  // Darken: 15.79%-21.05% (1s)
+  // Wait: 21.05%-100% (stay dark)
+
+  0% {
+    filter: brightness(0.8);
+  }
+  // Brighten phase (1s out of 19s = 5.26%)
+  5.26% {
+    filter: brightness(1);
+  }
+  // Hold bright (until 3s out of 19s = 15.79%)
+  15.79% {
+    filter: brightness(1);
+  }
+  // Darken phase (until 4s out of 19s = 21.05%)
+  21.05% {
+    filter: brightness(0.8);
+  }
+  // Stay dark for the rest
+  100% {
+    filter: brightness(0.8);
+  }
+}
