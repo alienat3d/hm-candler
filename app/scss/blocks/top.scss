@@ -1,8 +1,9 @@
 .top {
+  position: relative;
   margin-bottom: 150px;
-  min-height: 670px;
-  padding-top: 40px;
+  padding-top: 43px;
   padding-bottom: 150px;
+  min-height: 670px;
 
   @media (max-width: $mobile-large-width) {
     padding-bottom: 50px;
@@ -22,8 +23,8 @@
 }
 
 .top__content {
-  width: 370px;
   padding-top: 150px;
+  width: 370px;
 
   @media (max-width: $laptop-width) {
     width: 333px;
@@ -47,6 +48,7 @@
   margin-bottom: 15px;
   @include title-font-400;
   font-size: 30px;
+  line-height: 1.16;
 
   @media (max-width: $tablet-width) {
     margin-bottom: 20px;
@@ -83,20 +85,76 @@
   }
 }
 
-.top__buy {
-  padding: 20px 46px;
-  background-color: $bright-accent-color;
-  @include main-font-600;
-  font-size: 14px;
-  color: $btn-text-color;
+.top__bg-wrapper {
+  position: absolute;
+  top: 0;
+  right: -171px;
+  width: 1069px;
+  height: 655px;
+}
 
-  @media (max-width: $tablet-width) {
-    padding: 15px 31px;
+.top__bg-decor {
+  position: absolute;
+  top: -16px;
+  left: 23px;
+  width: 656px;
+  height: 649px;
+  background: url('../img/top/crossed-ellipses.svg') no-repeat center/contain;
+  animation: rotate 40s linear infinite;
+}
+
+.top__bg-part {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: brightness(0.9);
+  transition: filter .3s linear;
+
+  &:hover {
+    filter: brightness(1);
   }
-  @media (max-width: $mobile-large-width) {
-    padding: 11px 23px;
-    font-size: 11px;
-  }
+}
+.top__bg-part--1 {
+  bottom: -17px;
+  left: -15px;
+  width: 264px;
+  height: 308px;
+  background-image: url('../img/top/desktop-bg-part-1.png');
+}
+.top__bg-part--2 {
+  top: 42px;
+  left: 189px;
+  width: 361px;
+  height: 501px;
+  background-image: url('../img/top/desktop-bg-part-2.png');
+}
+.top__bg-part--3 {
+  top: -22px;
+  right: 265px;
+  width: 262px;
+  height: 287px;
+  background-image: url('../img/top/desktop-bg-part-3.png');
+}
+.top__bg-part--4 {
+  right: 61px;
+  bottom: 8px;
+  width: 326px;
+  height: 351px;
+  background-image: url('../img/top/desktop-bg-part-4.png');
+}
+.top__bg-part--5 {
+  top: 28px;
+  right: 59px;
+  width: 240px;
+  height: 320px;
+  background-image: url('../img/top/desktop-bg-part-5.png');
+}
+.top__bg-part--6 {
+  right: 358px;
+  bottom: -23px;
+  width: 234px;
+  height: 304px;
+  background-image: url('../img/top/desktop-bg-part-6.png');
 }
 
 .top__img {
