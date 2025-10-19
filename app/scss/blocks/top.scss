@@ -6,6 +6,9 @@
   @media (max-width: $laptop-width) {
     margin-bottom: 185px;
   }
+  @media (max-width: $laptop-width) {
+    margin-bottom: 250px;
+  }
   @media (max-width: $mobile-large-width) {
   }
   @media (max-width: $mobile-large-width) {
@@ -95,6 +98,10 @@
     right: 16px;
     width: 655px;
     height: 415px;
+  }
+
+  @media (max-width: $tablet-width) {
+    right: -164px;
   }
 }
 
