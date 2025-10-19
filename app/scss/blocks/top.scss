@@ -14,8 +14,8 @@
     margin-bottom: 130px;
   }
   @media (max-width: $mobile-small-width) {
-    margin-bottom: 30px;
-    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 50px;
   }
 }
 
@@ -107,6 +107,10 @@
     width: 310px;
     height: 309px;
   }
+  @media (max-width: $mobile-small-width) {
+    width: 117px;
+    height: 145px;
+  }
 }
 
 .top__bg-decor {
@@ -127,6 +131,9 @@
     left: 24px;
     width: 302px;
     height: 300px;
+  }
+  @media (max-width: $mobile-small-width) {
+    display: none;
   }
 }
 
@@ -177,6 +184,13 @@
     height: 175px;
     background-image: url("../img/top/mobile-lg-bg-part-1.png");
   }
+  @media (max-width: $mobile-small-width) {
+    bottom: -44px;
+    left: -9px;
+    width: 117px;
+    height: 145px;
+    background-image: url("../img/top/mobile-sm-bg-part.png");
+  }
 }
 .top__bg-part--2 {
   top: 42px;
@@ -199,6 +213,9 @@
     width: 199px;
     height: 261px;
     background-image: url("../img/top/mobile-lg-bg-part-2.png");
+  }
+  @media (max-width: $mobile-small-width) {
+    display: none;
   }
 }
 .top__bg-part--3 {
