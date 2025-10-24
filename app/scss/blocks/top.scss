@@ -93,21 +93,39 @@
   width: 1069px;
   height: 655px;
 
+  @media (max-width: 1145px) {
+    right: -307px;
+  }
   @media (max-width: $laptop-width) {
     right: 16px;
     width: 655px;
     height: 415px;
   }
-
+  @media (max-width: 950px) {
+    right: -85px;
+  }
+  @media (max-width: 855px) {
+    right: -175px;
+  }
   @media (max-width: $tablet-width) {
     right: -164px;
+  }
+  @media (max-width: 601px) {
+    right: -247px;
   }
   @media (max-width: $mobile-large-width) {
     right: 0;
     width: 310px;
     height: 309px;
   }
+  @media (max-width: 414px) {
+    right: -33px;
+  }
+  @media (max-width: 381px) {
+    right: -54px;
+  }
   @media (max-width: $mobile-small-width) {
+    right: 0;
     width: 117px;
     height: 145px;
   }
@@ -246,8 +264,8 @@
   animation-delay: 9s;
 
   @media (max-width: $laptop-width) {
-    right: 58px;
-    bottom: -20px;
+    right: 105px;
+    bottom: -62px;
     width: 223px;
     height: 240px;
     background-image: url("../img/top/laptop-bg-part-4.png");
@@ -265,8 +283,8 @@
   animation-delay: 12s;
 
   @media (max-width: $laptop-width) {
-    top: 28px;
-    right: 59px;
+    top: 75px;
+    right: 107px;
     width: 170px;
     height: 221px;
     background-image: url("../img/top/laptop-bg-part-5.png");
@@ -284,8 +302,8 @@
   animation-delay: 15s;
 
   @media (max-width: $laptop-width) {
-    right: 233px;
-    bottom: -63px;
+    right: 290px;
+    bottom: -70px;
     width: 164px;
     height: 208px;
     background-image: url("../img/top/laptop-bg-part-6.png");
