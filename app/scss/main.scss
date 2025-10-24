@@ -3,9 +3,11 @@
 @import 'variables'; // variables
 @import 'animations'; // animations
 @import 'global'; // global styles
+// Libraries styles:
+@import 'libs/hamburgers-settings';
+@import '../../node_modules/hamburgers/_sass/hamburgers/hamburgers';
 // BEM-blocks:
 @import 'blocks/header';
-@import 'blocks/menu';
 @import 'blocks/top';
 @import 'blocks/about';
 @import 'blocks/footer';

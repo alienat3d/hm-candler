@@ -99,3 +99,32 @@
     font-size: 16px;
   }
 }
+
+.header__hamburger {
+  display: none;
+
+  @media (max-width: 640px) {
+    display: inline-block;
+  }
+}
+
+.menu__list {
+  display: flex;
+  gap: 20px;
+}
+
+.menu__list-item {
+  text-transform: uppercase;
+  transition: all $fast-transition ease-in-out;
+}
+.menu__list-item:active,
+.menu__list-item:focus,
+.menu__list-item:hover {
+  color: $accent-color;
+}
+
+.menu--open .menu__list-item:active,
+.menu--open .menu__list-item:focus,
+.menu--open .menu__list-item:hover {
+  color: $bright-accent-color;
+}

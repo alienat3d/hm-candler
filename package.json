@@ -46,5 +46,8 @@
   "editorconfig-cli": [
     "app/html/**/*.html",
     "app/scss/**/*.scss"
-  ]
+  ],
+  "dependencies": {
+    "hamburgers": "^1.2.1"
+  }
 }

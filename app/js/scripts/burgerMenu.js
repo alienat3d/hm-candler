@@ -1,8 +1,9 @@
 export function burgerMenuFunc() {
-  const menuButton = document.querySelector(".menu__burger");
+  const menuButton = document.querySelector(".hamburger");
   const menuListMobile = document.querySelector(".header__menu-list");
 
-  menuButton.addEventListener("click", (evt) => {
+  menuButton.addEventListener("click", () => {
+    menuButton.classList.toggle("is-active");
     menuListMobile.classList.toggle("menu--open");
   });
 }
