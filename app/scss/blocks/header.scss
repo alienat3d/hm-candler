@@ -1,20 +1,23 @@
 .header {
-  @media (max-width: $mobile-large-width) {
-    font-size: 14px;
+  @media (max-width: 819px) {
+    font-size: 12px;
   }
   @media (max-width: $tablet-width) {
     font-size: 10px;
   }
+  @media (max-width: $mobile-large-width) {
+    font-size: 14px;
+  }
 }
 
 .header__menu {
-  @media (max-width: 640px) {
+  @media (max-width: 710px) {
     order: 1;
   }
 }
 
 .header__menu-list {
-  @media (max-width: 640px) {
+  @media (max-width: 710px) {
     position: absolute;
     left: 0;
     right: 0;
@@ -34,7 +37,7 @@
 }
 
 .header__menu-list.menu--open {
-  @media (max-width: 640px) {
+  @media (max-width: 710px) {
     z-index: 5;
     opacity: 1;
     transform: translateY(7%);
@@ -47,7 +50,7 @@
   justify-content: space-between;
   align-items: center;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: 819px) {
     padding-top: 0;
   }
 }
@@ -74,12 +77,12 @@
     background-repeat: no-repeat;
     transition: transform $fast-transition ease-in-out;
 
-    @media (max-width: $tablet-width) {
+    @media (max-width: 819px) {
       width: 14px;
       height: 14px;
       top: -1px;
     }
-    @media (max-width: 640px) {
+    @media (max-width: 710px) {
       width: 25px;
       height: 25px;
       top: -5px;
@@ -90,10 +93,10 @@
     transform: scale(1.2);
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: 819px) {
     padding-left: 18px;
   }
-  @media (max-width: 640px) {
+  @media (max-width: 710px) {
     margin-left: -28px;
     padding-left: 28px;
     font-size: 16px;
@@ -103,7 +106,7 @@
 .header__hamburger {
   display: none;
 
-  @media (max-width: 640px) {
+  @media (max-width: 710px) {
     display: inline-block;
   }
 }

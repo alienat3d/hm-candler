@@ -1,0 +1,22 @@
+.products {
+  padding-top: 150px;
+  padding-bottom: 150px;
+
+  @media (max-width: $laptop-width) {
+    margin-right: -10px;
+  }
+  @media (max-width: 959px) {
+    margin-right: 0;
+  }
+}
+.products__card-box {
+  padding-bottom: 71px;
+  gap: 50px 90px;
+
+  @media (max-width: $laptop-width) {
+    gap: 65px;
+  }
+  @media (max-width: 959px) {
+    gap: 30px 16px;
+  }
+}

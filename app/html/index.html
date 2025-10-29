@@ -1,55 +1,57 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <!-- ==| META |== -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- ==| / META |== -->
-    <title>HM Candler ~ Головна</title>
-    <!-- ==| FAVICONS |== -->
-    <link rel="icon" type="image/png" href="./img/favicons/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="./img/favicons/favicon.svg" />
-    <link rel="shortcut icon" href="./img/favicons/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="HM-Candler" />
-    <link rel="manifest" href="./img/favicons/site.webmanifest" />
-    <!-- ==| / FAVICONS |== -->
-    <!-- ==| CSS |== -->
-    <link rel="stylesheet" href="./css/main.min.css" />
-    <!-- ==| / CSS |== -->
-  </head>
 
-  <body>
-    <!-- === HEADER === -->
-    @@include('blocks/header.html')
-    <!-- === / HEADER === -->
-    <main class="main">
-      <!-- === TOP === -->
-      <section class="top">
-        <div class="container top__inner">
-          <div class="top__content">
-            <h3 class="top__title">Створіть атмосферу затишку та гармонії!</h3>
-            <p class="top__text">
-              Створіть особливу атмосферу у своєму домі з нашою екологічно
-              чистою та якісною продукцією зі 100% натуральної соєвого воску.
-            </p>
-            <button class="button">Купити</button>
-            <div class="top__bg-wrapper">
-              <div class="top__bg-decor"></div>
-              <div class="top__bg-part top__bg-part--1"></div>
-              <div class="top__bg-part top__bg-part--2"></div>
-              <div class="top__bg-part top__bg-part--3"></div>
-              <div class="top__bg-part top__bg-part--4"></div>
-              <div class="top__bg-part top__bg-part--5"></div>
-              <div class="top__bg-part top__bg-part--6"></div>
-            </div>
+<head>
+  <!-- ==| META |== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ==| / META |== -->
+  <title>HM Candler ~ Головна</title>
+  <!-- ==| FAVICONS |== -->
+  <link rel="icon" type="image/png" href="./img/favicons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="./img/favicons/favicon.svg" />
+  <link rel="shortcut icon" href="./img/favicons/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="HM-Candler" />
+  <link rel="manifest" href="./img/favicons/site.webmanifest" />
+  <!-- ==| / FAVICONS |== -->
+  <!-- ==| CSS |== -->
+  <link rel="stylesheet" href="./css/main.min.css" />
+  <!-- ==| / CSS |== -->
+</head>
+
+<body>
+  <!-- === HEADER === -->
+  @@include('blocks/header.html')
+  <!-- === / HEADER === -->
+  <main class="main">
+    <!-- === TOP === -->
+    <section class="top">
+      <div class="container top__inner">
+        <div class="top__content">
+          <h3 class="top__title">Створіть атмосферу затишку та гармонії!</h3>
+          <p class="top__text">
+            Створіть особливу атмосферу у своєму домі з нашою екологічно
+            чистою та якісною продукцією зі 100% натуральної соєвого воску.
+          </p>
+          <button class="button">Купити</button>
+          <div class="top__bg-wrapper">
+            <div class="top__bg-decor"></div>
+            <div class="top__bg-part top__bg-part--1"></div>
+            <div class="top__bg-part top__bg-part--2"></div>
+            <div class="top__bg-part top__bg-part--3"></div>
+            <div class="top__bg-part top__bg-part--4"></div>
+            <div class="top__bg-part top__bg-part--5"></div>
+            <div class="top__bg-part top__bg-part--6"></div>
           </div>
         </div>
-      </section>
-      <!-- === / TOP === -->
-      <!-- === ABOUT === -->
-      <section class="about">
-        <div class="container about__inner">
+      </div>
+    </section>
+    <!-- === / TOP === -->
+    <!-- === ABOUT === -->
+    <section class="about">
+      <div class="container">
+        <div class=" about__inner">
           <div class="about__content">
             <h2 class="title about__title">Про нас</h2>
             <p class="about__text">
@@ -63,43 +65,162 @@
               і цей вид воску є екологічно чистим та безпечним для здоров'я.
             </p>
           </div>
-          <ul class="about__photos">
+          <ul class="about__photos section--decor">
             <li class="about__photos-item">
               <picture>
-                <source type="image/jpeg" srcset="./img/about-1-small.jpg" media="(max-width: 480px)" width="80" height="80" />
-                <source type="image/jpeg" srcset="./img/about-1-middle.jpg" media="(max-width: 768px)"  width="119" height="119" />
-                <img class="about__photos-img" src="./img/about-1.jpg" alt="Запалена свічка у вигляді красивої жіночої фігури" width="214" height="219" />
+                <source type="image/jpeg" srcset="./img/about-1-small.jpg" media="(max-width: 414px)" width="80"
+                  height="80" />
+                <source type="image/jpeg" srcset="./img/about-1-small.jpg"
+                  media="(min-width: 415px) and (max-width: 480px)" width="80" height="80" />
+                <source type="image/jpeg"
+                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  media="(min-width: 481px) and (max-width: 520px)" width="1" height="1" />
+                <source type="image/jpeg" srcset="./img/about-1-small.jpg"
+                  media="(min-width: 521px) and (max-width: 600px)" width="80" height="80" />
+                <source type="image/jpeg" srcset="./img/about-1-middle.jpg"
+                  media="(min-width: 601px) and (max-width: 819px)" width="119" height="119" />
+                <img class="about__photos-img" src="./img/about-1.jpg"
+                  alt="Запалена свічка у вигляді красивої жіночої фігури" width="214" height="219" />
               </picture>
               <p class="about__photos-title">Насолоджуйтеся моментом</p>
             </li>
             <li class="about__photos-item">
               <picture>
-                <source type="image/png" srcset="./img/about-2-small.png" media="(max-width: 480px)" width="139" height="140" />
-                <source type="image/png" srcset="./img/about-2-middle.png" media="(max-width: 768px)"  width="192" height="195" />
-                <img class="about__photos-img" src="./img/about-2.png" alt="Запалена свічка у вигляді красивої жіночої фігури (інший ракурс)" width="347" height="354"/>
+                <source type="image/png" srcset="./img/about-2-small.png"
+                  media="(min-width: 414px) and (max-width: 600px)" width="139" height="140" />
+                <source type="image/png" srcset="./img/about-2-middle.png"
+                  media="(min-width: 601px) and (max-width: 819px)" width="192" height="195" />
+                <source type="image/png" srcset="./img/about-2.png" media="(min-width: 820px)" width="347"
+                  height="354" />
+                <img class="about__photos-img"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  alt="Запалена свічка у вигляді красивої жіночої фігури (інший ракурс)" width="1" height="1" />
               </picture>
               <p class="about__photos-title">Створіть улюблену атмосферу</p>
             </li>
             <li class="about__photos-item">
               <picture>
-                <source type="image/jpeg" srcset="./img/about-3-small.jpg" media="(max-width: 480px)" width="80" height="80" />
-                <source type="image/jpeg" srcset="./img/about-3-middle.jpg" media="(max-width: 768px)"  width="120" height="120" />
-                <img class="about__photos-img" src="./img/about-3.jpg" alt="Дві свічки у вигляді красивої жіночої фігури" width="214" height="217"/>
+                <source type="image/jpeg" srcset="./img/about-3-middle.jpg"
+                  media="(min-width: 711px) and (max-width: 768px)" width="120" height="120" />
+                <source type="image/jpeg" srcset="./img/about-3.jpg" media="(min-width: 1143px)" width="214"
+                  height="217" />
+                <img class="about__photos-img"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  alt="Дві свічки у вигляді красивої жіночої фігури" width="1" height="1" />
               </picture>
               <p class="about__photos-title">Виготовлені з любов'ю</p>
             </li>
           </ul>
         </div>
-      </section>
-      <!-- === / ABOUT === -->
-      <!-- === SECTIONname === -->
-      <section class="SECTIONname"></section>
-      <!-- === / SECTIONname === -->
-    </main>
-    <!-- === FOOTER === -->
-    @@include('blocks/footer.html')
-    <!-- === / FOOTER === -->
-    <!-- === JAVASCRIPT === -->
-    <script src="js/main.min.js"></script>
-  </body>
+      </div>
+    </section>
+    <!-- === / ABOUT === -->
+    <!-- === PRODUCTS === -->
+    <section class="products cards">
+      <div class="container">
+        <div class="cards__inner">
+          <div class="cards__title-box">
+            <h2 class="title">Наші товари</h2>
+            <p>
+              Ми використовуємо тільки найкращі якісні матеріали: соєвий віск, віскові барвники, високоякісні ароматичні
+              олії та бавовняні фітільці. Відтінки свічок дуже гармонійно поєднуються з ароматом, створюючи незабутню
+              атмосферу у вашому домі.
+            </p>
+          </div>
+          <div class="products__card-box cards__card-box section--decor">
+            <div class="card">
+              <picture>
+                <source type="image/jpeg" srcset="./img/products/heart-of-love-small.jpg" media="(max-width: 360px)"
+                  width="141" height="176" />
+                <source type="image/jpeg" srcset="./img/products/heart-of-love-middle.jpg" media="(max-width: 959px)"
+                  width="188" height="213" />
+                <img class="card__pic" src="./img/products/heart-of-love.jpg" alt="Фото продукции «Сердечко кохання»"
+                  width="273" height="310">
+              </picture>
+              <div class="card__price title">$10</div>
+              <h3 class="card__name title">"Сердечко кохання"</h3>
+              <p class="card__description">
+                Запах: ніжний аромат троянди та ванілі.
+                Для чого: для атмосфери романтичного настрою
+              </p>
+              <button class="button card__button">Купити</button>
+            </div>
+            <div class="card">
+              <picture>
+                <source type="image/jpeg" srcset="./img/products/whirlwind-of-love-small.jpg" media="(max-width: 360px)"
+                  width="141" height="176" />
+                <source type="image/jpeg" srcset="./img/products/whirlwind-of-love-middle.jpg"
+                  media="(max-width: 959px)" width="188" height="213" />
+                <img class="card__pic" src="./img/products/whirlwind-of-love.jpg" alt="Фото продукции «Вихір кохання»"
+                  width="273" height="310">
+              </picture>
+              <div class="card__price title">$7</div>
+              <h3 class="card__name title">"Вихір кохання"</h3>
+              <p class="card__description">
+                Запах: ніжний аромат лаванди.
+                Для чого: для створення атмосфери затишку
+              </p>
+              <button class="button card__button">Купити</button>
+            </div>
+            <div class="card">
+              <picture>
+                <source type="image/jpeg" srcset="./img/products/rainbow-small.jpg" media="(max-width: 360px)"
+                  width="141" height="176" />
+                <source type="image/jpeg" srcset="./img/products/rainbow-middle.jpg" media="(max-width: 959px)"
+                  width="188" height="213" />
+                <img class="card__pic" src="./img/products/rainbow.jpg" alt="Фото продукции «Веселка»" width="273"
+                  height="310">
+              </picture>
+              <div class="card__price title">$8</div>
+              <h3 class="card__name title">"Веселка"</h3>
+              <p class="card__description">
+                Запах: Свіжий аромат лайма.
+                Для чого: для енергії та свіжості в приміщені.
+              </p>
+              <button class="button card__button">Купити</button>
+            </div>
+            <div class="card">
+              <picture>
+                <source type="image/jpeg" srcset="./img/products/womens-beauty-small.jpg" media="(max-width: 360px)"
+                  width="141" height="176" />
+                <source type="image/jpeg" srcset="./img/products/womens-beauty-middle.jpg" media="(max-width: 959px)"
+                  width="188" height="213" />
+                <img class="card__pic" src="./img/products/womens-beauty.jpg" alt="Фото продукции «Жіноча чарівність»"
+                  width="273" height="310">
+              </picture>
+              <div class="card__price title">$12</div>
+              <h3 class="card__name title">"Жіноча чарівність"</h3>
+              <p class="card__description">
+                Запах: ніжний аромат лаванди та фрезій. Для чого: для затишку та комфорту.
+              </p>
+              <button class="button card__button">Купити</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- === / PRODUCTS === -->
+    <!-- === STAGES === -->
+    <section class="stages">
+      <div class="container"></div>
+    </section>
+    <!-- === / STAGES === -->
+    <!-- === COURSES === -->
+    <section class="courses">
+      <div class="container"></div>
+    </section>
+    <!-- === / COURSES === -->
+    <!-- === SECTIONname === -->
+    <section class="SECTIONname">
+      <div class="container"></div>
+    </section>
+    <!-- === / SECTIONname === -->
+  </main>
+  <!-- === FOOTER === -->
+  @@include('blocks/footer.html')
+  <!-- === / FOOTER === -->
+  <!-- === JAVASCRIPT === -->
+  <script src="js/main.min.js"></script>
+</body>
+
 </html>

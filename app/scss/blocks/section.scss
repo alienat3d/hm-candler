@@ -1,0 +1,65 @@
+.section--decor {
+  position: relative;
+}
+.section--decor::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: -21px;
+  width: 22px;
+  height: 30px;
+  background-image: url("../img/candle.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 0;
+}
+.about .section--decor::before {
+  @media (max-width: $laptop-width) {
+    left: 3px;
+  }
+  @media (max-width: $tablet-width) {
+    left: 11px;
+    bottom: -14px;
+  }
+  @media (max-width: 819px) {
+    bottom: 66px;
+  }
+  @media (max-width: $tablet-width) {
+    bottom: 45px;
+  }
+  @media (max-width: $mobile-large-width) {
+    left: 5px;
+    bottom: 0;
+  }
+  @media (max-width: 375px) {
+    bottom: -7px;
+  }
+}
+.section--decor::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: $accent-color;
+  width: 1000%;
+  height: 1px;
+}
+.about .section--decor::after {
+  @media (max-width: $laptop-width) {
+    left: 24px;
+  }
+  @media (max-width: 819px) {
+    bottom: 69px;
+  }
+  @media (max-width: $tablet-width) {
+    left: 32px;
+    bottom: 48px;
+  }
+  @media (max-width: $mobile-large-width) {
+    left: 26px;
+    bottom: 3px;
+  }
+  @media (max-width: 375px) {
+    bottom: -4px;
+  }
+}
