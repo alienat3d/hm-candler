@@ -78,20 +78,20 @@
                 <source type="image/jpeg" srcset="./img/about-1-small.jpg"
                   media="(min-width: 521px) and (max-width: 600px)" width="80" height="80" />
                 <source type="image/jpeg" srcset="./img/about-1-middle.jpg"
-                  media="(min-width: 601px) and (max-width: 819px)" width="119" height="119" />
+                  media="(min-width: 601px) and (max-width: 819px)" width="120" height="120" />
                 <img class="about__photos-img" src="./img/about-1.jpg"
-                  alt="Запалена свічка у вигляді красивої жіночої фігури" width="214" height="219" />
+                  alt="Запалена свічка у вигляді красивої жіночої фігури" width="215" height="220" />
               </picture>
               <p class="about__photos-title">Насолоджуйтеся моментом</p>
             </li>
             <li class="about__photos-item">
               <picture>
                 <source type="image/png" srcset="./img/about-2-small.png"
-                  media="(min-width: 414px) and (max-width: 600px)" width="139" height="140" />
+                  media="(min-width: 414px) and (max-width: 600px)" width="140" height="140" />
                 <source type="image/png" srcset="./img/about-2-middle.png"
-                  media="(min-width: 601px) and (max-width: 819px)" width="192" height="195" />
-                <source type="image/png" srcset="./img/about-2.png" media="(min-width: 820px)" width="347"
-                  height="354" />
+                  media="(min-width: 601px) and (max-width: 819px)" width="191" height="195" />
+                <source type="image/png" srcset="./img/about-2.png" media="(min-width: 820px)" width="349"
+                  height="355" />
                 <img class="about__photos-img"
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                   alt="Запалена свічка у вигляді красивої жіночої фігури (інший ракурс)" width="1" height="1" />
@@ -102,8 +102,8 @@
               <picture>
                 <source type="image/jpeg" srcset="./img/about-3-middle.jpg"
                   media="(min-width: 711px) and (max-width: 768px)" width="120" height="120" />
-                <source type="image/jpeg" srcset="./img/about-3.jpg" media="(min-width: 1143px)" width="214"
-                  height="217" />
+                <source type="image/jpeg" srcset="./img/about-3.jpg" media="(min-width: 1143px)" width="215"
+                  height="218" />
                 <img class="about__photos-img"
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                   alt="Дві свічки у вигляді красивої жіночої фігури" width="1" height="1" />
@@ -201,13 +201,92 @@
     </section>
     <!-- === / PRODUCTS === -->
     <!-- === STAGES === -->
-    <section class="stages">
+    <section class="stages cards">
       <div class="container"></div>
     </section>
     <!-- === / STAGES === -->
     <!-- === COURSES === -->
-    <section class="courses">
-      <div class="container"></div>
+    <section class="courses cards">
+      <div class="container">
+        <div class="cards__inner">
+          <div class="cards__title-box">
+            <h2 class="title">Наші курси</h2>
+            <p>
+              Наші курси дозволяють зробити перший крок в новій кар'єрі або поглибити знання в своїй галузі, розвиватися
+              як професіонал, а також покращити якість свого життя.
+            </p>
+          </div>
+          <div class="products__card-box cards__card-box section--decor">
+            <div class="card">
+              <picture>
+                <source type="image/jpeg" srcset="./img/products/heart-of-love-small.jpg" media="(max-width: 360px)"
+                  width="141" height="176" />
+                <source type="image/jpeg" srcset="./img/products/heart-of-love-middle.jpg" media="(max-width: 959px)"
+                  width="188" height="213" />
+                <img class="card__pic" src="./img/products/heart-of-love.jpg" alt="Фото продукции «Сердечко кохання»"
+                  width="273" height="310">
+              </picture>
+              <div class="card__price title">$10</div>
+              <h3 class="card__name title">"Сердечко кохання"</h3>
+              <p class="card__description">
+                Запах: ніжний аромат троянди та ванілі.
+                Для чого: для атмосфери романтичного настрою
+              </p>
+              <button class="button card__button">Купити</button>
+            </div>
+            <div class="card">
+              <picture>
+                <source type="image/jpeg" srcset="./img/products/whirlwind-of-love-small.jpg" media="(max-width: 360px)"
+                  width="141" height="176" />
+                <source type="image/jpeg" srcset="./img/products/whirlwind-of-love-middle.jpg"
+                  media="(max-width: 959px)" width="188" height="213" />
+                <img class="card__pic" src="./img/products/whirlwind-of-love.jpg" alt="Фото продукции «Вихір кохання»"
+                  width="273" height="310">
+              </picture>
+              <div class="card__price title">$7</div>
+              <h3 class="card__name title">"Вихір кохання"</h3>
+              <p class="card__description">
+                Запах: ніжний аромат лаванди.
+                Для чого: для створення атмосфери затишку
+              </p>
+              <button class="button card__button">Купити</button>
+            </div>
+            <div class="card">
+              <picture>
+                <source type="image/jpeg" srcset="./img/products/rainbow-small.jpg" media="(max-width: 360px)"
+                  width="141" height="176" />
+                <source type="image/jpeg" srcset="./img/products/rainbow-middle.jpg" media="(max-width: 959px)"
+                  width="188" height="213" />
+                <img class="card__pic" src="./img/products/rainbow.jpg" alt="Фото продукции «Веселка»" width="273"
+                  height="310">
+              </picture>
+              <div class="card__price title">$8</div>
+              <h3 class="card__name title">"Веселка"</h3>
+              <p class="card__description">
+                Запах: Свіжий аромат лайма.
+                Для чого: для енергії та свіжості в приміщені.
+              </p>
+              <button class="button card__button">Купити</button>
+            </div>
+            <div class="card">
+              <picture>
+                <source type="image/jpeg" srcset="./img/products/womens-beauty-small.jpg" media="(max-width: 360px)"
+                  width="141" height="176" />
+                <source type="image/jpeg" srcset="./img/products/womens-beauty-middle.jpg" media="(max-width: 959px)"
+                  width="188" height="213" />
+                <img class="card__pic" src="./img/products/womens-beauty.jpg" alt="Фото продукции «Жіноча чарівність»"
+                  width="273" height="310">
+              </picture>
+              <div class="card__price title">$12</div>
+              <h3 class="card__name title">"Жіноча чарівність"</h3>
+              <p class="card__description">
+                Запах: ніжний аромат лаванди та фрезій. Для чого: для затишку та комфорту.
+              </p>
+              <button class="button card__button">Купити</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- === / COURSES === -->
     <!-- === SECTIONname === -->
