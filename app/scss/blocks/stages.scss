@@ -1,0 +1,42 @@
+.stages__list {
+  counter-reset: number;
+  padding-bottom: 69px;
+  gap: 70px;
+}
+
+.stages__item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+
+  &::after {
+    counter-increment: number;
+    content: "0" counter(number);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    @include title-font-400;
+    font-size: 30px;
+    color: #bea495;
+  }
+}
+.stages__item.stages__item--even::after {
+  left: auto;
+  right: 0;
+}
+.stages__item:nth-child(n + 10)::after {
+  content: counter(number);
+}
+
+.stages__item-text {
+  padding-bottom: 40px;
+  width: 159px;
+}
+
+.stages__item-image {
+  display: block;
+  width: 158px;
+  height: 220px;
+  object-fit: cover;
+}
