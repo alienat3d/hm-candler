@@ -11,7 +11,22 @@
     grid-template-columns: 200px auto;
   }
 }
+.stages .cards__inner {
+  @media (max-width: 1231px) {
+    grid-template-columns: 300px auto;
+    justify-content: space-between;
+  }
+  @media (max-width: 1023px) {
+    grid-template-columns: 220px auto;
+  }
+}
+
 .cards__card-box {
   display: grid;
   grid-template-columns: repeat(2, auto);
+}
+.stages .cards__card-box {
+  @media (max-width: 1231px) {
+    grid-template-columns: repeat(2, 300px);
+  }
 }

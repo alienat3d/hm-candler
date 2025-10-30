@@ -2,6 +2,14 @@
   counter-reset: number;
   padding-bottom: 69px;
   gap: 70px;
+
+  @media (max-width: 1231px) {
+    gap: 50px;
+  }
+
+  @media (max-width: 1023px) {
+    gap: 34px;
+  }
 }
 
 .stages__item {
@@ -32,6 +40,10 @@
 .stages__item-text {
   padding-bottom: 40px;
   width: 159px;
+
+  @media (max-width: 1231px) {
+    width: 125px;
+  }
 }
 
 .stages__item-image {
@@ -39,4 +51,8 @@
   width: 158px;
   height: 220px;
   object-fit: cover;
+
+  @media (max-width: 1231px) {
+    width: 125px;
+  }
 }
