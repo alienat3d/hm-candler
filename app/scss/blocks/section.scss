@@ -12,6 +12,10 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 0 0;
+
+  @media (max-width: 714px) {
+    left: -4px;
+  }
 }
 .about .section--decor::before {
   @media (max-width: $laptop-width) {
@@ -43,6 +47,10 @@
   background-color: $accent-color;
   width: 1000%;
   height: 1px;
+
+  @media (max-width: 714px) {
+    left: 17px;
+  }
 }
 .about .section--decor::after {
   @media (max-width: $laptop-width) {
