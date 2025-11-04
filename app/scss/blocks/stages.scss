@@ -40,7 +40,7 @@
     @include title-font-400;
     font-size: 30px;
     line-height: 1;
-    color: #bea495;
+    color: $light-taupe;
 
     @media (max-width: 884px) {
       font-size: 20px;

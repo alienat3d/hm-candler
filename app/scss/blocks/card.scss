@@ -5,8 +5,31 @@
   max-width: 290px;
   text-align: center;
 }
+.card__image-box {
+  position: relative;
+}
 .card__pic {
   margin-bottom: 8px;
+}
+.card__image-sticker {
+  @include title-font-400;
+  position: absolute;
+  padding: 14px;
+  background-color: $light-taupe;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+.card__image-sticker--length{
+  top: -14px;
+  left: -3px;
+}
+.card__image-sticker--price {
+  right: -3px;
+  bottom: 8px;
+}
+.card__image-sticker span {
+  @include main-font-400;
+  font-size: 13px;
 }
 .card__price {
   margin-bottom: 12px;
