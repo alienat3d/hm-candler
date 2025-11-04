@@ -7,14 +7,21 @@
   @media (max-width: $laptop-width) {
     grid-template-columns: 300px auto;
   }
-  @media (max-width: 959px) {
+  @media (max-width: 984px) {
     grid-template-columns: 200px auto;
   }
   @media (max-width: 884px) {
     gap: 15px;
   }
-  @media (max-width: 450px) {
+  @media (max-width: $tablet-width) {
+    padding-bottom: 120px;
+  }
+  @media (max-width: 714px) {
+    display: block;
     padding-bottom: 80px;
+  }
+  @media (max-width: $mobile-large-width) {
+    padding-bottom: 60px;
   }
 }
 .stages .cards__inner {
@@ -28,27 +35,28 @@
   @media (max-width: 884px) {
     grid-template-columns: 200px auto;
   }
-  @media (max-width: 714px) {
-    display: block;
-  }
 }
 
-.stages .cards__title-box {
+.cards__title-box {
   @media (max-width: 714px) {
     margin-bottom: 30px;
     text-align: center;
   }
 }
 
-.stages .title {
+.cards__title {
   @media (max-width: 714px) {
     margin-bottom: 10px;
   }
 }
 
-.stages .cards__subtitle {
+.cards__subtitle {
   @media (max-width: 714px) {
     margin: 0 auto;
+  }
+}
+.stages .cards__subtitle {
+  @media (max-width: 714px) {
     max-width: 300px;
   }
 }
