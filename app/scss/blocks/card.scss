@@ -17,32 +17,61 @@
   padding: 14px;
   background-color: $light-taupe;
   font-size: 14px;
-  color: #FFFFFF;
+  color: #ffffff;
+
+  @media (max-width: 959px) {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
 }
-.card__image-sticker--length{
+.card__image-sticker--length {
   top: -14px;
   left: -3px;
+
+  @media (max-width: 959px) {
+    top: -7px;
+    left: 34px;
+  }
 }
 .card__image-sticker--price {
   right: -3px;
   bottom: 8px;
+
+  @media (max-width: 959px) {
+    right: 34px;
+    bottom: 14px;
+  }
 }
 .card__image-sticker span {
   @include main-font-400;
   font-size: 13px;
+
+  @media (max-width: 959px) {
+    font-size: 11px;
+  }
+}
+.card__price,
+.card__name {
+  font-size: 16px;
+
+  @media (max-width: 959px) {
+    font-size: 14px;
+  }
 }
 .card__price {
   margin-bottom: 12px;
-  font-size: 16px;
 }
 .card__name {
   margin-bottom: 16px;
-  font-size: 16px;
 }
 .card__description {
   @include main-font-400;
   margin-bottom: 27px;
-  font-size: 13px;
+  font-size: 12px;
+
+  @media (max-width: 959px) {
+    font-size: 12px;
+  }
 }
 .card__button {
   margin: auto auto 0;

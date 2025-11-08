@@ -3,4 +3,8 @@
 }
 .courses .button {
   max-width: none;
+
+  @media (max-width: 959px) {
+    padding: 18px 32px;
+  }
 }

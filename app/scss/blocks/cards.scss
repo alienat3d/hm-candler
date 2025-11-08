@@ -36,6 +36,15 @@
     grid-template-columns: 200px auto;
   }
 }
+.courses .cards__inner {
+  @media (max-width: 1142px) {
+    grid-template-columns: 300px auto;
+  }
+  @media (max-width: 1023px) {
+    grid-template-columns: 220px auto;
+    justify-content: space-between;
+  }
+}
 
 .cards__title-box {
   @media (max-width: 714px) {
@@ -77,5 +86,19 @@
   }
   @media (max-width: 450px) {
     grid-template-columns: repeat(2, 161px);
+  }
+}
+.courses .cards__card-box {
+  padding-bottom: 71px;
+  column-gap: 36px;
+
+  @media (max-width: 959px) {
+    grid-template-columns: repeat(2, 270px);
+    column-gap: 15px;
+  }
+  @media (max-width: 840px) {
+    grid-template-columns: repeat(2, 212px);
+    justify-content: space-between;
+    column-gap: 25px;
   }
 }
