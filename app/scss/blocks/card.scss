@@ -5,6 +5,11 @@
   max-width: 290px;
   text-align: center;
 }
+.courses .card:not(.card:last-child) {
+  @media (max-width: 411px) {
+    margin-bottom: 40px;
+  }
+}
 .card__image-box {
   position: relative;
 }
@@ -32,6 +37,22 @@
     top: -7px;
     left: 34px;
   }
+  @media (max-width: 840px) {
+    left: 5px;
+  }
+  @media (max-width: 760px) {
+    left: 15.2%;
+  }
+  @media (max-width: 601px) {
+    left: 8.2%;
+  }
+  @media (max-width: 414px) {
+    left: -4px;
+    top: -5px;
+  }
+  @media (max-width: 411px) {
+    left: 17px;
+  }
 }
 .card__image-sticker--price {
   right: -3px;
@@ -39,7 +60,24 @@
 
   @media (max-width: 959px) {
     right: 34px;
-    bottom: 14px;
+    bottom: 15px;
+  }
+  @media (max-width: 840px) {
+    right: 5px;
+  }
+  @media (max-width: 760px) {
+    right: 15.2%;
+    bottom: 13px;
+  }
+  @media (max-width: 601px) {
+    right: 8.2%;
+  }
+  @media (max-width: 414px) {
+    bottom: 16px;
+    right: -4px;
+  }
+  @media (max-width: 411px) {
+    right: 17px;
   }
 }
 .card__image-sticker span {
@@ -71,6 +109,10 @@
 
   @media (max-width: 959px) {
     font-size: 12px;
+  }
+  @media (max-width: 411px) {
+    margin: 0 auto 27px;
+    max-width: 255px;
   }
 }
 .card__button {
