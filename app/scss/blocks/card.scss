@@ -5,6 +5,14 @@
   max-width: 290px;
   text-align: center;
 }
+.team .card {
+  margin: 0;
+  max-width: 270px;
+
+  @media (max-width: 1200px) {
+    max-width: none;
+  }
+}
 .courses .card:not(.card:last-child) {
   @media (max-width: 411px) {
     margin-bottom: 40px;
@@ -27,6 +35,38 @@
   @media (max-width: 959px) {
     padding: 8px 10px;
     font-size: 12px;
+  }
+}
+.team .card__image-sticker {
+  @include main-font-400;
+  bottom: 21px;
+  right: -140px;
+  max-width: 200px;
+  background-color: $accent-color;
+  font-size: 11px;
+
+  @media (max-width: 1200px) {
+    right: -130px;
+    max-width: 182px;
+    font-size: 10px;
+  }
+  @media (max-width: 1140px) {
+    right: -20px;
+    bottom: -55px;
+  }
+}
+.team .card__image-sticker--short {
+  @media (max-width: 1140px) {
+    bottom: -27px;
+  }
+}
+.team .card__image-sticker div {
+  @include title-font-400;
+  margin-bottom: 4px;
+  font-size: 14px;
+
+  @media (max-width: 1200px) {
+    font-size: 13px;
   }
 }
 .card__image-sticker--length {

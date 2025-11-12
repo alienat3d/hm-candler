@@ -1,0 +1,10 @@
+.team {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: $alt-bg-color;
+  color: #FFFFFF;
+
+  @media (max-width: 1140px) {
+    padding-bottom: 135px;
+  }
+}
