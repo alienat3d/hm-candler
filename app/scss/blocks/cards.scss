@@ -181,4 +181,18 @@
   @media (max-width: 959px) {
     grid-template-columns: repeat(2, 250px);
   }
+  @media (max-width: $tablet-width) {
+    grid-template-columns: repeat(2, 152px);
+    column-gap: 40px;
+  }
+  @media (max-width: 714px) {
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    justify-content: space-around;
+    column-gap: 0;
+  }
+  @media (max-width: 600px) {
+    display: block;
+    padding-right: 98px;
+  }
 }

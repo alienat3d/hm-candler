@@ -5,6 +5,11 @@
   max-width: 290px;
   text-align: center;
 }
+.courses .card:not(.card:last-child) {
+  @media (max-width: 411px) {
+    margin-bottom: 40px;
+  }
+}
 .team .card {
   margin: 0;
   max-width: 270px;
@@ -12,10 +17,18 @@
   @media (max-width: 1200px) {
     max-width: none;
   }
+  @media (max-width: 600px) {
+    margin: 0 auto;
+  }
 }
-.courses .card:not(.card:last-child) {
-  @media (max-width: 411px) {
-    margin-bottom: 40px;
+.team .card:not(.card:nth-child(3)):not(.card:last-child) {
+  @media (max-width: 600px) {
+    margin-bottom: 39px;
+  }
+}
+.team .card:nth-child(3) {
+  @media (max-width: 600px) {
+    margin-bottom: 23px;
   }
 }
 .card__image-box {
@@ -54,10 +67,34 @@
     right: -20px;
     bottom: -55px;
   }
+  @media (max-width: $tablet-width) {
+    max-width: 145px;
+    right: -10px;
+    bottom: -66px;
+  }
+  @media (max-width: 714px) {
+    right: -10px;
+    bottom: -59px;
+    max-width: 196px;
+    font-size: 11px;
+  }
+  @media (max-width: 600px) {
+    bottom: -29px;
+    right: -98px;
+  }
 }
 .team .card__image-sticker--short {
   @media (max-width: 1140px) {
     bottom: -27px;
+  }
+  @media (max-width: $tablet-width) {
+    bottom: -51px;
+  }
+  @media (max-width: 714px) {
+    bottom: -28px;
+  }
+  @media (max-width: 600px) {
+    bottom: -13px;
   }
 }
 .team .card__image-sticker div {
@@ -67,6 +104,12 @@
 
   @media (max-width: 1200px) {
     font-size: 13px;
+  }
+  @media (max-width: $tablet-width) {
+    font-size: 12px;
+  }
+  @media (max-width: 714px) {
+    font-size: 14px;
   }
 }
 .card__image-sticker--length {
