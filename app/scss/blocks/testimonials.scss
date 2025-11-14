@@ -1,0 +1,71 @@
+.testimonials {
+  padding-top: 150px;
+}
+
+.testimonials__slider {
+  padding-bottom: 53px;
+}
+
+.testimonials__slider {
+  overflow: hidden;
+  width: 760px;
+}
+
+.testimonials__slider .swiper-slide {
+  display: flex;
+  column-gap: 15px;
+}
+
+.testimonials__slider-video-box {
+  position: relative;
+}
+
+.testimonials__slider-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+
+  svg path {
+    transition: fill-opacity $fast-transition ease;
+  }
+
+  &:hover svg path {
+    fill-opacity: 1;
+  }
+}
+
+.testimonials__slider-content {
+  margin-top: 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.testimonials__slider-social-links {
+  margin-bottom: 6px;
+}
+
+.testimonials__slider-social-links a:hover {
+  transition: color $fast-transition ease;
+  color: $accent-color;
+}
+
+.testimonials__slider-name {
+  @include title-font-400;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.testimonials__slider-content .button {
+  margin: auto 5px 5px auto;
+  max-width: 254px;
+}
+
+.testimonials__slider-pagination {
+  margin-top: 37px;
+  text-align: center;
+}

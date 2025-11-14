@@ -84,6 +84,10 @@ function js() {
                 },
               },
             },
+            {
+              test: /\.css$/,
+              use: ["style-loader", "css-loader"],
+            },
           ],
         },
       })

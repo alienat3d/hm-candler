@@ -12,7 +12,7 @@
   background-color: $accent-color;
   transition: all 0.5s linear;
 
-  &:hover {
+  &:active {
     background-color: $bright-accent-color;
   }
 }
@@ -89,7 +89,7 @@ body {
   color: $btn-text-color;
   box-shadow: 3px -3px 1.5px 0.5px rgba(187, 165, 152);
   transition: box-shadow 0.1s ease-in, transform 0.1s ease-in,
-    background-color 0.25s linear;
+    background-color $fast-transition linear;
 
   @media (max-width: $tablet-width) {
     padding: 15px 31px;
@@ -118,6 +118,18 @@ body {
   @media (max-width: $mobile-large-width) {
     font-size: 18px;
   }
+}
+
+.swiper-pagination-bullets .swiper-pagination-bullet {
+  border-radius: 0;
+  width: 53px;
+  height: 4px;
+  background-color: $light-taupe;
+  opacity: 1;
+}
+
+.swiper-pagination-bullets .swiper-pagination-bullet-active {
+  background-color: $accent-color;
 }
 
 // img {
