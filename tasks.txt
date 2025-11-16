@@ -1,3 +1,0 @@
-FIXME: > create candle.png decor into SVG with Illustrator if possible.
-
-CHK: > переходы на брейкпоинтов, т.к. они на 1 пиксель меньше, чем ширина контейнера + пэддинги. Особое внимание уделить 320px.

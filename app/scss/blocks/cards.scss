@@ -74,6 +74,18 @@
     column-gap: 20px;
   }
 }
+.testimonials .cards__inner {
+  @media (max-width: 1230px) {
+    grid-template-columns: 260px auto;
+    justify-content: space-between;
+  }
+  @media (max-width: $laptop-width) {
+    padding-bottom: 70px;
+  }
+  @media (max-width: 999px) {
+    grid-template-columns: 230px auto;
+  }
+}
 
 .cards__title-box {
   @media (max-width: 714px) {
