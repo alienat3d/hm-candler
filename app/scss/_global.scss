@@ -126,6 +126,10 @@ body {
   height: 4px;
   background-color: $light-taupe;
   opacity: 1;
+
+  @media (max-width: 584px) {
+    width: 40px;
+  }
 }
 
 .swiper-pagination-bullets .swiper-pagination-bullet-active {

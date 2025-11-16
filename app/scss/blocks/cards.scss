@@ -85,6 +85,13 @@
   @media (max-width: 999px) {
     grid-template-columns: 230px auto;
   }
+  @media (max-width: $tablet-width) {
+    grid-template-columns: 200px auto;
+  }
+  @media (max-width: 767px) {
+    display: block;
+    padding-bottom: 40px;
+  }
 }
 
 .cards__title-box {
@@ -106,6 +113,17 @@
 .team .cards__title-box {
   @media (max-width: 890px) {
     font-size: 12px;
+  }
+}
+.testimonials .cards__title-box {
+  @media (max-width: 767px) {
+    margin: 0 auto 19px;
+    max-width: 355px;
+    text-align: center;
+  }
+  @media (max-width: 584px) {
+    font-size: 12px;
+    margin-bottom: 26px;
   }
 }
 
