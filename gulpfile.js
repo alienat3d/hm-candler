@@ -126,8 +126,8 @@ function fonts() {
 
 function misc() {
   return src(sourceFolder + "/misc/**/*.*")
-    .pipe(cachebust({ type: "timestamp" }))
-    .pipe(dest(buildFolder + "/favicons"));
+    // .pipe(cachebust({ type: "timestamp" }))
+    .pipe(dest(buildFolder));
 }
 
 function clear() {

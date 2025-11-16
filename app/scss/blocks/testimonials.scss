@@ -3,7 +3,7 @@
 }
 
 .testimonials__slider {
-  padding-bottom: 53px;
+  padding-bottom: 46px;
 }
 
 .testimonials__slider {
@@ -24,10 +24,15 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  border-radius: 50%;
   width: 80px;
   height: 80px;
   transform: translate(-50%, -50%);
   background-color: transparent;
+
+  svg {
+    border-radius: 50%;
+  }
 
   svg path {
     transition: fill-opacity $fast-transition ease;
@@ -47,6 +52,9 @@
 
 .testimonials__slider-social-links {
   margin-bottom: 6px;
+}
+.testimonials__slider-social-links a + a {
+  margin-left: 3px;
 }
 
 .testimonials__slider-social-links a:hover {
