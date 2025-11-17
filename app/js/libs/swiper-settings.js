@@ -4,7 +4,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 export default function swiperSettings() {
-  const swiper = new Swiper(".testimonials__slider", {
+  const testimonialsSlider = new Swiper(".testimonials__slider", {
     modules: [Pagination],
     loop: true,
     autoplay: {
@@ -12,7 +12,6 @@ export default function swiperSettings() {
     },
     spaceBetween: 20,
     grabCursor: true,
-    // pauseOnMouseEnter: true,
     pagination: {
       el: ".testimonials__slider-pagination",
     },
