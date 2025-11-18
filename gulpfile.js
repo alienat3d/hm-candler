@@ -64,38 +64,47 @@ function scss() {
 }
 
 function js() {
-  return src(sourceFolder + "/js/main.js")
-    .pipe(sourcemaps.init())
-    .pipe(
-      webpackStream({
-        mode: "none",
-        output: {
-          filename: "main.min.js",
-        },
-        module: {
-          rules: [
-            {
-              test: /\.m?js$/,
-              exclude: /node_modules/,
-              use: {
-                loader: "babel-loader",
-                options: {
-                  presets: [["@babel/preset-env", { targets: "defaults" }]],
+  return (
+    src(sourceFolder + "/js/main.js")
+      .pipe(sourcemaps.init())
+      .pipe(
+        webpackStream({
+          mode: "none",
+          // mode: "production",
+          output: {
+            filename: "main.min.js",
+          },
+          module: {
+            rules: [
+              {
+                test: /\.m?js$/,
+                exclude: /node_modules/,
+                use: {
+                  loader: "babel-loader",
+                  options: {
+                    presets: [["@babel/preset-env", { targets: "defaults" }]],
+                  },
                 },
               },
-            },
-            {
-              test: /\.css$/,
-              use: ["style-loader", "css-loader"],
-            },
-          ],
-        },
-      })
-    )
-
-    .pipe(uglify())
-    .pipe(sourcemaps.write())
-    .pipe(dest(buildFolder + "/js"));
+              {
+                test: /\.css$/,
+                use: ["style-loader", "css-loader"],
+              },
+              {
+                test: /\.(gif|png|jpe?g|svg|ico)$/i,
+                type: "asset/resource",
+                generator: {
+                  filename: "img/[name][ext]", // Put assets in an images folder
+                },
+              },
+            ],
+          },
+        })
+      )
+      // .pipe(uglify())
+      .pipe(sourcemaps.write())
+      .pipe(dest(buildFolder + "/js"))
+  );
 }
 
 function img() {
@@ -125,8 +134,14 @@ function fonts() {
 }
 
 function misc() {
-  return src(sourceFolder + "/misc/**/*.*")
-    // .pipe(cachebust({ type: "timestamp" }))
+  return src([
+    sourceFolder + "/misc/**/*.*",
+    // 🚨 EXCLUDE common video and binary formats from processing
+    "!" +
+      sourceFolder +
+      "/misc/**/*.{mp4,webm,mov,avi,mkv,gif,jpg,png,jpeg,webp}",
+  ])
+    .pipe(cachebust({ type: "timestamp" }))
     .pipe(dest(buildFolder));
 }
 
