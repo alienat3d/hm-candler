@@ -1,5 +1,5 @@
 import Swiper from "swiper";
-import { Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 
 import lightGallery from "lightgallery";
 import lgThumbnail from "lightgallery/plugins/thumbnail";
@@ -15,16 +15,30 @@ import "lightgallery/css/lg-zoom.css";
 export default function certsSwiperSettings() {
   const $lgSwiper = document.getElementById("lg-certificates");
   const certificatesSlider = new Swiper(".certificates__slider", {
-    modules: [Pagination],
+    modules: [Pagination, Autoplay],
     loop: true,
     autoplay: {
-      delay: 5000,
+      delay: 3000,
+      pauseOnMouseEnter: true,
+      disableOnInteraction: false,
     },
-    slidesPerView: 3,
-    spaceBetween: 20,
+    slidesPerView: 1,
+    spaceBetween: 10,
     grabCursor: true,
     pagination: {
       el: ".certificates__slider-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      412: { slidesPerView: 2 },
+      715: { slidesPerView: 3 },
+      960: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+      1141: {
+        spaceBetween: 20,
+        slidesPerView: 2,
+      },
+      1231: { slidesPerView: 3 }
     },
     on: {
       init: function () {
