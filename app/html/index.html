@@ -16,7 +16,8 @@
   <link rel="manifest" href="./img/favicons/site.webmanifest" />
   <!-- ==| / FAVICONS |== -->
   <!-- ==| CSS |== -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/css/lightgallery-bundle.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/css/lightgallery-bundle.min.css"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="./css/main.min.css" />
   <!-- ==| / CSS |== -->
@@ -54,7 +55,7 @@
     </section>
     <!-- === / TOP === -->
     <!-- === ABOUT === -->
-    <section class="about">
+    <section id="#about" class="about">
       <div class="container">
         <div class=" about__inner">
           <div class="about__content">
@@ -121,7 +122,7 @@
     </section>
     <!-- === / ABOUT === -->
     <!-- === PRODUCTS === -->
-    <section class="products cards">
+    <section id="products" class="products cards">
       <div class="container">
         <div class="cards__inner">
           <div class="cards__title-box">
@@ -139,8 +140,8 @@
                   width="141" height="176" />
                 <source type="image/jpeg" srcset="./img/products/heart-of-love-middle.jpg" media="(max-width: 856px)"
                   width="188" height="213" />
-                <img class="card__pic" src="./img/products/heart-of-love.jpg" alt="Артикль «Сердечко любви»"
-                  width="273" height="310">
+                <img class="card__pic" src="./img/products/heart-of-love.jpg" alt="Артикль «Сердечко любви»" width="273"
+                  height="310">
               </picture>
               <div class="card__price title">700 ₽</div>
               <h3 class="card__name title">"Сердечко любви"</h3>
@@ -173,8 +174,7 @@
                   width="141" height="176" />
                 <source type="image/jpeg" srcset="./img/products/rainbow-middle.jpg" media="(max-width: 856px)"
                   width="188" height="213" />
-                <img class="card__pic" src="./img/products/rainbow.jpg" alt="Артикль «Радуга»" width="273"
-                  height="310">
+                <img class="card__pic" src="./img/products/rainbow.jpg" alt="Артикль «Радуга»" width="273" height="310">
               </picture>
               <div class="card__price title">580 ₽</div>
               <h3 class="card__name title">"Радуга"</h3>
@@ -383,7 +383,7 @@
     </section>
     <!-- === / STAGES === -->
     <!-- === COURSES === -->
-    <section class="courses cards">
+    <section id="courses" class="courses cards">
       <div class="container">
         <div class="cards__inner">
           <div class="cards__title-box">
@@ -437,7 +437,7 @@
     </section>
     <!-- === / COURSES === -->
     <!-- === TEAM === -->
-    <section class="team cards">
+    <section id="team" class="team cards">
       <div class="container">
         <div class="cards__inner">
           <div class="cards__title-box">
@@ -453,7 +453,8 @@
                 <picture>
                   <source type="image/jpeg" srcset="./img/team/evgeniy-middle.jpg"
                     media="(min-width: 715px) and (max-width: 768px)" width="145" height="155" />
-                  <img class="card__pic" src="./img/team/evgeniy.jpg" alt="Преподаватель Евгений" width="220" height="220">
+                  <img class="card__pic" src="./img/team/evgeniy.jpg" alt="Преподаватель Евгений" width="220"
+                    height="220">
                 </picture>
                 <div class="card__image-sticker">
                   <div>Преподаватель Евгений</div>
@@ -466,7 +467,8 @@
                 <picture>
                   <source type="image/jpeg" srcset="./img/team/suzanna-middle.jpg"
                     media="(min-width: 715px) and (max-width: 768px)" width="145" height="155" />
-                  <img class="card__pic" src="./img/team/suzanna.jpg" alt="Преподавательница Сюзанна" width="220" height="220">
+                  <img class="card__pic" src="./img/team/suzanna.jpg" alt="Преподавательница Сюзанна" width="220"
+                    height="220">
                 </picture>
                 <div class="card__image-sticker">
                   <div>Преподавательница Сюзанна</div>
@@ -492,7 +494,8 @@
                 <picture>
                   <source type="image/jpeg" srcset="./img/team/elena-middle.jpg"
                     media="(min-width: 715px) and (max-width: 768px)" width="145" height="155" />
-                  <img class="card__pic" src="./img/team/elena.jpg" alt="Преподавательница Елена" width="220" height="220">
+                  <img class="card__pic" src="./img/team/elena.jpg" alt="Преподавательница Елена" width="220"
+                    height="220">
                 </picture>
                 <div class="card__image-sticker">
                   <div>Преподавательница Елена</div>
@@ -505,7 +508,7 @@
     </section>
     <!-- === / TEAM === -->
     <!-- === TESTIMONIALS === -->
-    <section class="testimonials cards">
+    <section id="testimonials" class="testimonials cards">
       <div class="container">
         <div class="cards__inner">
           <div class="cards__title-box">
@@ -527,27 +530,39 @@
                         media="(max-width: 584px)" width="250" height="250" />
                       <source type="image/jpeg" srcset="./img/testimonials/poster-1-middle.jpg"
                         media="(max-width: 999px)" width="200" height="200" />
-                      <img class="testimonials__slider-video-cover" src="./img/testimonials/poster-1.jpg" alt="Свеча в виде красивой женской фигуры" width="380" height="370">
+                      <img class="testimonials__slider-video-cover" src="./img/testimonials/poster-1.jpg"
+                        alt="Свеча в виде красивой женской фигуры" width="380" height="370">
                     </picture>
                     <button class="testimonials__slider-play-button">
-                      <svg><use xlink:href="./img/icons/sprite.svg#play"></use></svg>
+                      <svg>
+                        <use xlink:href="./img/icons/sprite.svg#play"></use>
+                      </svg>
                     </button>
                   </div>
                   <div class="testimonials__slider-content">
                     <div class="testimonials__slider-social-links">
                       <a href="https://super-massage.ru/" target='_blank'>
-                        <svg width="22" height="22"><use xlink:href="./img/icons/sprite.svg#website"></use></svg>
+                        <svg width="22" height="22">
+                          <use xlink:href="./img/icons/sprite.svg#website"></use>
+                        </svg>
                       </a>
                       <a href="https://t.com/" target='_blank'>
-                        <svg width="22" height="22"><use xlink:href="./img/icons/sprite.svg#telegram"></use></svg>
+                        <svg width="22" height="22">
+                          <use xlink:href="./img/icons/sprite.svg#telegram"></use>
+                        </svg>
                       </a>
                       <a href="https://google.com/" target='_blank'>
-                        <svg width="22" height="22"><use xlink:href="./img/icons/sprite.svg#instagram"></use></svg>
+                        <svg width="22" height="22">
+                          <use xlink:href="./img/icons/sprite.svg#instagram"></use>
+                        </svg>
                       </a>
                     </div>
                     <div class="testimonials__slider-name">Василиса Зимина</div>
                     <p class="testimonials__slider-text">
-                      Я открыла собственный  массажный салон и очень долго рыскала по всему интернету в поисках подходящего декора для него. Например, мне как раз не хватало подходящих свечей для создания нужной атмосферы. Я приятно была удивлена, когда нашла в HM Candler такие уникальные и мастерски сделанные свечи! Спасибо, это как раз то, что мне было нужно!
+                      Я открыла собственный массажный салон и очень долго рыскала по всему интернету в поисках
+                      подходящего декора для него. Например, мне как раз не хватало подходящих свечей для создания
+                      нужной атмосферы. Я приятно была удивлена, когда нашла в HM Candler такие уникальные и мастерски
+                      сделанные свечи! Спасибо, это как раз то, что мне было нужно!
                     </p>
                     <button class="button">Купить этот товар</button>
                   </div>
@@ -560,24 +575,33 @@
                         media="(max-width: 584px)" width="250" height="250" />
                       <source type="image/jpeg" srcset="./img/testimonials/poster-2-middle.jpg"
                         media="(max-width: 999px)" width="200" height="200" />
-                      <img class="testimonials__slider-video-cover" src="./img/testimonials/poster-2.jpg" alt="Горящая свеча в виде ярко красного сердечка" width="380" height="370">
+                      <img class="testimonials__slider-video-cover" src="./img/testimonials/poster-2.jpg"
+                        alt="Горящая свеча в виде ярко красного сердечка" width="380" height="370">
                     </picture>
                     <button class="testimonials__slider-play-button">
-                      <svg width="80" height="80"><use xlink:href="./img/icons/sprite.svg#play"></use></svg>
+                      <svg width="80" height="80">
+                        <use xlink:href="./img/icons/sprite.svg#play"></use>
+                      </svg>
                     </button>
                   </div>
                   <div class="testimonials__slider-content">
                     <div class="testimonials__slider-social-links">
                       <a href="https://t.com/" target='_blank'>
-                        <svg width="22" height="22"><use xlink:href="./img/icons/sprite.svg#telegram"></use></svg>
+                        <svg width="22" height="22">
+                          <use xlink:href="./img/icons/sprite.svg#telegram"></use>
+                        </svg>
                       </a>
                       <a href="https://google.com/" target='_blank'>
-                        <svg width="22" height="22"><use xlink:href="./img/icons/sprite.svg#instagram"></use></svg>
+                        <svg width="22" height="22">
+                          <use xlink:href="./img/icons/sprite.svg#instagram"></use>
+                        </svg>
                       </a>
                     </div>
                     <div class="testimonials__slider-name">Дмитрий Филиппенко</div>
                     <p class="testimonials__slider-text">
-                      Я заказал свечу в форме сердечка на День Святого Валентина для моей девушки, и она была просто невероятная! Запах был очень приятным и романтичным, а форма сердечка была идеальной для этого праздника. Моя девушка была очень довольна подарком, и я точно закажу еще свечи с этого сайта!
+                      Я заказал свечу в форме сердечка на День Святого Валентина для моей девушки, и она была просто
+                      невероятная! Запах был очень приятным и романтичным, а форма сердечка была идеальной для этого
+                      праздника. Моя девушка была очень довольна подарком, и я точно закажу еще свечи с этого сайта!
                     </p>
                     <button class="button">Купить этот товар</button>
                   </div>
@@ -590,10 +614,13 @@
                         media="(max-width: 584px)" width="250" height="250" />
                       <source type="image/jpeg" srcset="./img/testimonials/poster-3-middle.jpg"
                         media="(max-width: 999px)" width="200" height="200" />
-                      <img class="testimonials__slider-video-cover" src="./img/testimonials/poster-3.jpg" alt="Горящая свеча в виде сердца (если смотреть сверху вниз)" width="380" height="370">
+                      <img class="testimonials__slider-video-cover" src="./img/testimonials/poster-3.jpg"
+                        alt="Горящая свеча в виде сердца (если смотреть сверху вниз)" width="380" height="370">
                     </picture>
                     <button class="testimonials__slider-play-button">
-                      <svg width="80" height="80"><use xlink:href="./img/icons/sprite.svg#play"></use></svg>
+                      <svg width="80" height="80">
+                        <use xlink:href="./img/icons/sprite.svg#play"></use>
+                      </svg>
                     </button>
                   </div>
                   <div class="testimonials__slider-content">
@@ -604,15 +631,22 @@
                         </svg>
                       </a>
                       <a href="https://google.com/" target='_blank'>
-                        <svg width="22" height="22"><use xlink:href="./img/icons/sprite.svg#instagram"></use></svg>
+                        <svg width="22" height="22">
+                          <use xlink:href="./img/icons/sprite.svg#instagram"></use>
+                        </svg>
                       </a>
                       <a href="https://google.com/" target='_blank'>
-                        <svg width="22" height="22"><use xlink:href="./img/icons/sprite.svg#facebook"></use></svg>
+                        <svg width="22" height="22">
+                          <use xlink:href="./img/icons/sprite.svg#facebook"></use>
+                        </svg>
                       </a>
                     </div>
                     <div class="testimonials__slider-name">Василий Репин</div>
                     <p class="testimonials__slider-text">
-                      Случайно забрёл на ваш сайт и был приятно поражён выбором действительно качественно отформованных свечей. Выбрал свечку в виде сердца, в качестве прекрасного оформления к основному подарку супруге на нашу годовщину свадьбы. Оказалось, что свеча не только выглядит отлично, но и прекрасно пахнет! Жена была в восторге!
+                      Случайно забрёл на ваш сайт и был приятно поражён выбором действительно качественно отформованных
+                      свечей. Выбрал свечку в виде сердца, в качестве прекрасного оформления к основному подарку супруге
+                      на нашу годовщину свадьбы. Оказалось, что свеча не только выглядит отлично, но и прекрасно пахнет!
+                      Жена была в восторге!
                     </p>
                     <button class="button">Купить этот товар</button>
                   </div>
@@ -625,10 +659,14 @@
                         media="(max-width: 584px)" width="250" height="250" />
                       <source type="image/jpeg" srcset="./img/testimonials/poster-4-middle.jpg"
                         media="(max-width: 999px)" width="200" height="200" />
-                      <img class="testimonials__slider-video-cover" src="./img/testimonials/poster-4.jpg" alt="Комплект разной формы (включая два сердечка) розовых свечей на блюдце" width="380" height="370">
+                      <img class="testimonials__slider-video-cover" src="./img/testimonials/poster-4.jpg"
+                        alt="Комплект разной формы (включая два сердечка) розовых свечей на блюдце" width="380"
+                        height="370">
                     </picture>
                     <button class="testimonials__slider-play-button">
-                      <svg width="80" height="80"><use xlink:href="./img/icons/sprite.svg#play"></use></svg>
+                      <svg width="80" height="80">
+                        <use xlink:href="./img/icons/sprite.svg#play"></use>
+                      </svg>
                     </button>
                   </div>
                   <div class="testimonials__slider-content">
@@ -639,12 +677,17 @@
                         </svg>
                       </a>
                       <a href="https://google.com/" target='_blank'>
-                        <svg width="22" height="22"><use xlink:href="./img/icons/sprite.svg#facebook"></use></svg>
+                        <svg width="22" height="22">
+                          <use xlink:href="./img/icons/sprite.svg#facebook"></use>
+                        </svg>
                       </a>
                     </div>
                     <div class="testimonials__slider-name">Галина Волоскова</div>
                     <p class="testimonials__slider-text">
-                      Долго искала красивые свечи для оформления моей квартиры после ремонта. На сайте HM Candler нашла большое разнообразие свечей, особенно приглянулся этот прекрасный набор разной формы свечей в розовом тоне. Это то, что мне нужно! Оказалось, они ещё так приятно пахнут! Спасибо вам за эту уникальную продукцию, которая приносит мне столько эстетического наслаждения!
+                      Долго искала красивые свечи для оформления моей квартиры после ремонта. На сайте HM Candler нашла
+                      большое разнообразие свечей, особенно приглянулся этот прекрасный набор разной формы свечей в
+                      розовом тоне. Это то, что мне нужно! Оказалось, они ещё так приятно пахнут! Спасибо вам за эту
+                      уникальную продукцию, которая приносит мне столько эстетического наслаждения!
                     </p>
                     <button class="button">Купить этот товар</button>
                   </div>
@@ -671,116 +714,127 @@
             <div class="certificates__slider">
               <div id="lg-certificates" class="swiper-wrapper">
                 <!-- Slide #1 -->
-                  <a class="swiper-slide" href="/img/certificates/certificate-1-full.jpg" data-lg-size="1600-1131" data-sub-html="<strong>Сертификат о прохождении обучения создания восковых изделий</strong><h4>Выдано университетом Хогвардс 17 ноября 2025 года</h4>">
-                    <picture>
-                      <source type="image/jpeg" srcset="./img/certificates/certificate-1-middle.jpg"
-                        media="(max-width: 380px)" width="280" height="198" />
-                      <source type="image/jpeg" srcset="./img/certificates/certificate-1-small.jpg"
-                        media="(min-width: 412px) and (max-width: 959px)" width="200" height="141" />
-                      <source type="image/jpeg" srcset="./img/certificates/certificate-1-middle.jpg"
-                        media="(min-width: 960px) and (max-width: 1140px)" width="280" height="198" />
-                      <img src="./img/certificates/certificate-1.jpg" alt="Сертификат о прохождении обучения создания восковых изделий" width="375" height="265" />
-                    </picture>
-                  </a>
+                <a class="swiper-slide" href="/img/certificates/certificate-1-full.jpg" data-lg-size="1600-1131"
+                  data-sub-html="<strong>Сертификат о прохождении обучения создания восковых изделий</strong><h4>Выдано университетом Хогвардс 17 ноября 2025 года</h4>">
+                  <picture>
+                    <source type="image/jpeg" srcset="./img/certificates/certificate-1-middle.jpg"
+                      media="(max-width: 380px)" width="280" height="198" />
+                    <source type="image/jpeg" srcset="./img/certificates/certificate-1-small.jpg"
+                      media="(min-width: 412px) and (max-width: 959px)" width="200" height="141" />
+                    <source type="image/jpeg" srcset="./img/certificates/certificate-1-middle.jpg"
+                      media="(min-width: 960px) and (max-width: 1140px)" width="280" height="198" />
+                    <img src="./img/certificates/certificate-1.jpg"
+                      alt="Сертификат о прохождении обучения создания восковых изделий" width="375" height="265" />
+                  </picture>
+                </a>
                 <!-- Slide #2 -->
-                  <a class="swiper-slide" href="/img/certificates/certificate-2-full.jpg" data-lg-size="1600-1131"
-                    data-sub-html="<strong>Сертификат о прохождении обучения на преподавателя</strong><h4>Выдано университетом Хогвардс 15 октября 2025 года</h4>">
-                    <picture>
-                      <source type="image/jpeg" srcset="./img/certificates/certificate-2-small.jpg"
-                        media="(min-width: 412px) and (max-width: 959px)" width="200" height="141" />
-                      <source type="image/jpeg" srcset="./img/certificates/certificate-2-middle.jpg"
-                        media="(min-width: 960px) and (max-width: 1140px)" width="280" height="198" />
-                      <img src="./img/certificates/certificate-2.jpg" alt="Сертификат о прохождении обучения на преподавателя" width="375" height="265" />
-                    </picture>
-                  </a>
+                <a class="swiper-slide" href="/img/certificates/certificate-2-full.jpg" data-lg-size="1600-1131"
+                  data-sub-html="<strong>Сертификат о прохождении обучения на преподавателя</strong><h4>Выдано университетом Хогвардс 15 октября 2025 года</h4>">
+                  <picture>
+                    <source type="image/jpeg" srcset="./img/certificates/certificate-2-small.jpg"
+                      media="(min-width: 412px) and (max-width: 959px)" width="200" height="141" />
+                    <source type="image/jpeg" srcset="./img/certificates/certificate-2-middle.jpg"
+                      media="(min-width: 960px) and (max-width: 1140px)" width="280" height="198" />
+                    <img src="./img/certificates/certificate-2.jpg"
+                      alt="Сертификат о прохождении обучения на преподавателя" width="375" height="265" />
+                  </picture>
+                </a>
                 <!-- Slide #3 -->
-                  <a class="swiper-slide" href="/img/certificates/certificate-3-full.jpg" data-lg-size="1600-1131"
-                    data-sub-html="<strong>Сертификат о прохождении обучения создания восковых изделий</strong><h4>Выдано университетом Хогвардс 12 октября 2025 года</h4>">
-                    <picture>
-                      <source type="image/jpeg" srcset="./img/certificates/certificate-3-small.jpg"
-                        media="(max-width: 959px)" width="200" height="141" />
-                      <source type="image/jpeg" srcset="./img/certificates/certificate-3-middle.jpg"
-                        media="(max-width: 1140px)" width="280" height="198" />
-                      <img src="./img/certificates/certificate-3.jpg" alt="Сертификат о прохождении обучения создания восковых изделий" width="375" height="265" />
-                    </picture>
-                  </a>
+                <a class="swiper-slide" href="/img/certificates/certificate-3-full.jpg" data-lg-size="1600-1131"
+                  data-sub-html="<strong>Сертификат о прохождении обучения создания восковых изделий</strong><h4>Выдано университетом Хогвардс 12 октября 2025 года</h4>">
+                  <picture>
+                    <source type="image/jpeg" srcset="./img/certificates/certificate-3-small.jpg"
+                      media="(max-width: 959px)" width="200" height="141" />
+                    <source type="image/jpeg" srcset="./img/certificates/certificate-3-middle.jpg"
+                      media="(max-width: 1140px)" width="280" height="198" />
+                    <img src="./img/certificates/certificate-3.jpg"
+                      alt="Сертификат о прохождении обучения создания восковых изделий" width="375" height="265" />
+                  </picture>
+                </a>
                 <!-- Slide #4 -->
-                  <a class="swiper-slide" href="/img/certificates/certificate-4-full.jpg" data-lg-size="1600-1131"
-                    data-sub-html="<strong>Сертификат о прохождении обучения на преподавателя</strong><h4>Выдано университетом Хогвардс 29 сентября 2025 года</h4>">
-                    <picture>
-                      <source type="image/jpeg" srcset="./img/certificates/certificate-4-small.jpg"
-                        media="(max-width: 959px)" width="200" height="141" />
-                      <source type="image/jpeg" srcset="./img/certificates/certificate-4-middle.jpg"
-                        media="(max-width: 1140px)" width="280" height="198" />
-                      <img src="./img/certificates/certificate-4.jpg" alt="Сертификат о прохождении обучения на преподавателя" width="375" height="265" />
-                    </picture>
-                  </a>
+                <a class="swiper-slide" href="/img/certificates/certificate-4-full.jpg" data-lg-size="1600-1131"
+                  data-sub-html="<strong>Сертификат о прохождении обучения на преподавателя</strong><h4>Выдано университетом Хогвардс 29 сентября 2025 года</h4>">
+                  <picture>
+                    <source type="image/jpeg" srcset="./img/certificates/certificate-4-small.jpg"
+                      media="(max-width: 959px)" width="200" height="141" />
+                    <source type="image/jpeg" srcset="./img/certificates/certificate-4-middle.jpg"
+                      media="(max-width: 1140px)" width="280" height="198" />
+                    <img src="./img/certificates/certificate-4.jpg"
+                      alt="Сертификат о прохождении обучения на преподавателя" width="375" height="265" />
+                  </picture>
+                </a>
                 <!-- Slide #5 -->
-                  <a class="swiper-slide" href="/img/certificates/certificate-5-full.jpg" data-lg-size="1600-1131"
-                    data-sub-html="<strong>Сертификат о прохождении обучения создания восковых изделий</strong><h4>Выдано университетом Хогвардс 18 сентября 2025 года</h4>">
-                    <picture>
-                      <source type="image/jpeg" srcset="./img/certificates/certificate-5-small.jpg"
-                        media="(max-width: 959px)" width="200" height="141" />
-                      <source type="image/jpeg" srcset="./img/certificates/certificate-5-middle.jpg"
-                        media="(max-width: 1140px)" width="280" height="198" />
-                      <img src="./img/certificates/certificate-5.jpg" alt="Сертификат о прохождении обучения создания восковых изделий" width="375" height="265" />
-                    </picture>
-                  </a>
+                <a class="swiper-slide" href="/img/certificates/certificate-5-full.jpg" data-lg-size="1600-1131"
+                  data-sub-html="<strong>Сертификат о прохождении обучения создания восковых изделий</strong><h4>Выдано университетом Хогвардс 18 сентября 2025 года</h4>">
+                  <picture>
+                    <source type="image/jpeg" srcset="./img/certificates/certificate-5-small.jpg"
+                      media="(max-width: 959px)" width="200" height="141" />
+                    <source type="image/jpeg" srcset="./img/certificates/certificate-5-middle.jpg"
+                      media="(max-width: 1140px)" width="280" height="198" />
+                    <img src="./img/certificates/certificate-5.jpg"
+                      alt="Сертификат о прохождении обучения создания восковых изделий" width="375" height="265" />
+                  </picture>
+                </a>
                 <!-- Slide #6 -->
-                  <a class="swiper-slide" href="/img/certificates/certificate-6-full.jpg" data-lg-size="1600-1131"
-                    data-sub-html="<strong>Сертификат о прохождении обучения на преподавателя</strong><h4>Выдано университетом Хогвардс 2 сентября 2025 года</h4>">
-                    <picture>
-                      <source type="image/jpeg" srcset="./img/certificates/certificate-6-small.jpg"
-                        media="(max-width: 959px)" width="200" height="141" />
-                      <source type="image/jpeg" srcset="./img/certificates/certificate-6-middle.jpg"
-                        media="(max-width: 1140px)" width="280" height="198" />
-                      <img src="./img/certificates/certificate-6.jpg" alt="Сертификат о прохождении обучения на преподавателя" width="375" height="265" />
-                    </picture>
-                  </a>
+                <a class="swiper-slide" href="/img/certificates/certificate-6-full.jpg" data-lg-size="1600-1131"
+                  data-sub-html="<strong>Сертификат о прохождении обучения на преподавателя</strong><h4>Выдано университетом Хогвардс 2 сентября 2025 года</h4>">
+                  <picture>
+                    <source type="image/jpeg" srcset="./img/certificates/certificate-6-small.jpg"
+                      media="(max-width: 959px)" width="200" height="141" />
+                    <source type="image/jpeg" srcset="./img/certificates/certificate-6-middle.jpg"
+                      media="(max-width: 1140px)" width="280" height="198" />
+                    <img src="./img/certificates/certificate-6.jpg"
+                      alt="Сертификат о прохождении обучения на преподавателя" width="375" height="265" />
+                  </picture>
+                </a>
                 <!-- Slide #7 -->
-                  <a class="swiper-slide" href="/img/certificates/certificate-7-full.jpg" data-lg-size="1600-1131"
-                    data-sub-html="<strong>Сертификат о прохождении обучения создания восковых изделий</strong><h4>Выдано университетом Хогвардс 1 августа 2025 года</h4>">
-                    <picture>
-                      <source type="image/jpeg" srcset="./img/certificates/certificate-7-small.jpg"
-                        media="(max-width: 959px)" width="200" height="141" />
-                      <source type="image/jpeg" srcset="./img/certificates/certificate-7-middle.jpg"
-                        media="(max-width: 1140px)" width="280" height="198" />
-                      <img src="./img/certificates/certificate-7.jpg" alt="Сертификат о прохождении обучения создания восковых изделий" width="375" height="265" />
-                    </picture>
-                  </a>
+                <a class="swiper-slide" href="/img/certificates/certificate-7-full.jpg" data-lg-size="1600-1131"
+                  data-sub-html="<strong>Сертификат о прохождении обучения создания восковых изделий</strong><h4>Выдано университетом Хогвардс 1 августа 2025 года</h4>">
+                  <picture>
+                    <source type="image/jpeg" srcset="./img/certificates/certificate-7-small.jpg"
+                      media="(max-width: 959px)" width="200" height="141" />
+                    <source type="image/jpeg" srcset="./img/certificates/certificate-7-middle.jpg"
+                      media="(max-width: 1140px)" width="280" height="198" />
+                    <img src="./img/certificates/certificate-7.jpg"
+                      alt="Сертификат о прохождении обучения создания восковых изделий" width="375" height="265" />
+                  </picture>
+                </a>
                 <!-- Slide #8 -->
-                  <a class="swiper-slide" href="/img/certificates/certificate-8-full.jpg" data-lg-size="1600-1131"
-                    data-sub-html="<strong>Сертификат о прохождении обучения на преподавателя</strong><h4>Выдано университетом Хогвардс 14 июля 2025 года</h4>">
-                    <picture>
-                      <source type="image/jpeg" srcset="./img/certificates/certificate-8-small.jpg"
-                        media="(max-width: 959px)" width="200" height="141" />
-                      <source type="image/jpeg" srcset="./img/certificates/certificate-8-middle.jpg"
-                        media="(max-width: 1140px)" width="280" height="198" />
-                      <img src="./img/certificates/certificate-8.jpg" alt="Сертификат о прохождении обучения на преподавателя" width="375" height="265" />
-                    </picture>
-                  </a>
+                <a class="swiper-slide" href="/img/certificates/certificate-8-full.jpg" data-lg-size="1600-1131"
+                  data-sub-html="<strong>Сертификат о прохождении обучения на преподавателя</strong><h4>Выдано университетом Хогвардс 14 июля 2025 года</h4>">
+                  <picture>
+                    <source type="image/jpeg" srcset="./img/certificates/certificate-8-small.jpg"
+                      media="(max-width: 959px)" width="200" height="141" />
+                    <source type="image/jpeg" srcset="./img/certificates/certificate-8-middle.jpg"
+                      media="(max-width: 1140px)" width="280" height="198" />
+                    <img src="./img/certificates/certificate-8.jpg"
+                      alt="Сертификат о прохождении обучения на преподавателя" width="375" height="265" />
+                  </picture>
+                </a>
                 <!-- Slide #9 -->
-                  <a class="swiper-slide" href="/img/certificates/certificate-9-full.jpg" data-lg-size="1600-1131"
-                    data-sub-html="<strong>Сертификат о прохождении обучения создания восковых изделий</strong><h4>Выдано университетом Хогвардс 7 июня 2025 года</h4>">
-                    <picture>
-                      <source type="image/jpeg" srcset="./img/certificates/certificate-9-small.jpg"
-                        media="(max-width: 959px)" width="200" height="141" />
-                      <source type="image/jpeg" srcset="./img/certificates/certificate-9-middle.jpg"
-                        media="(max-width: 1140px)" width="280" height="198" />
-                      <img src="./img/certificates/certificate-9.jpg" alt="Сертификат о прохождении обучения создания восковых изделий" width="375" height="265" />
-                    </picture>
-                  </a>
+                <a class="swiper-slide" href="/img/certificates/certificate-9-full.jpg" data-lg-size="1600-1131"
+                  data-sub-html="<strong>Сертификат о прохождении обучения создания восковых изделий</strong><h4>Выдано университетом Хогвардс 7 июня 2025 года</h4>">
+                  <picture>
+                    <source type="image/jpeg" srcset="./img/certificates/certificate-9-small.jpg"
+                      media="(max-width: 959px)" width="200" height="141" />
+                    <source type="image/jpeg" srcset="./img/certificates/certificate-9-middle.jpg"
+                      media="(max-width: 1140px)" width="280" height="198" />
+                    <img src="./img/certificates/certificate-9.jpg"
+                      alt="Сертификат о прохождении обучения создания восковых изделий" width="375" height="265" />
+                  </picture>
+                </a>
                 <!-- Slide #10 -->
-                  <a class="swiper-slide" href="/img/certificates/certificate-10-full.jpg" data-lg-size="1600-1131"
-                    data-sub-html="<strong>Сертификат о прохождении обучения на преподавателя</strong><h4>Выдано университетом Хогвардс 25 декабря 2024 года</h4>">
-                    <picture>
-                      <source type="image/jpeg" srcset="./img/certificates/certificate-10-small.jpg"
-                        media="(max-width: 959px)" width="200" height="141" />
-                      <source type="image/jpeg" srcset="./img/certificates/certificate-10-middle.jpg"
-                        media="(max-width: 1140px)" width="280" height="198" />
-                      <img src="./img/certificates/certificate-10.jpg" alt="Сертификат о прохождении обучения на преподавателя" width="375" height="265" />
-                    </picture>
-                  </a>
+                <a class="swiper-slide" href="/img/certificates/certificate-10-full.jpg" data-lg-size="1600-1131"
+                  data-sub-html="<strong>Сертификат о прохождении обучения на преподавателя</strong><h4>Выдано университетом Хогвардс 25 декабря 2024 года</h4>">
+                  <picture>
+                    <source type="image/jpeg" srcset="./img/certificates/certificate-10-small.jpg"
+                      media="(max-width: 959px)" width="200" height="141" />
+                    <source type="image/jpeg" srcset="./img/certificates/certificate-10-middle.jpg"
+                      media="(max-width: 1140px)" width="280" height="198" />
+                    <img src="./img/certificates/certificate-10.jpg"
+                      alt="Сертификат о прохождении обучения на преподавателя" width="375" height="265" />
+                  </picture>
+                </a>
               </div>
               <div class="certificates__slider-pagination"></div>
             </div>
@@ -794,7 +848,9 @@
       <div class="container faq__inner">
         <div class="title-box">
           <h2 class="title">ЧаВо
-            <svg class="tooltip-asterisk"><use xlink:href="./img/icons/sprite.svg#asterisk"></use></svg>
+            <svg class="tooltip-asterisk">
+              <use xlink:href="./img/icons/sprite.svg#asterisk"></use>
+            </svg>
           </h2>
           <div class="tooltip">Часто задаваемые вопросы</div>
         </div>
@@ -802,64 +858,160 @@
           <div class="accordion__item">
             <button class="accordion__item-title">Какие ароматы доступны для свечей?</button>
             <div class="accordion__item-content">
-              <ol>
-                <li>Ваниль - теплый, сладкий и уютный аромат, напоминающий о домашнем уюте.</li>
-                <li>Лаванда - приятный, успокаивающий и расслабляющий запах, который помогает снять стресс и напряжение.</li>
-                <li>Розовый грейпфрут - свежий, фруктовый и энергичный аромат, который помогает поднять настроение и взбодриться.</li>
-                <li>Кедр - древесный, земной и маскулинный аромат, который придает ощущение стабильности и надежности.</li>
-                <li>Яблоко и корица – теплый и уютный аромат, напоминающий о зимних праздниках и домашнем уюте.</li>
-              </ol>
+              <div class="accordion__item-content-inner">
+                <ol>
+                  <li>Ваниль - теплый, сладкий и уютный аромат, напоминающий о домашнем уюте.</li>
+                  <li>Лаванда - приятный, успокаивающий и расслабляющий запах, который помогает снять стресс и
+                    напряжение.</li>
+                  <li>Розовый грейпфрут - свежий, фруктовый и энергичный аромат, который помогает поднять настроение и
+                    взбодриться.</li>
+                  <li>Кедр - древесный, земной и маскулинный аромат, который придает ощущение стабильности и надежности.
+                  </li>
+                  <li>Яблоко и корица – теплый и уютный аромат, напоминающий о зимних праздниках и домашнем уюте.</li>
+                </ol>
+              </div>
             </div>
           </div>
           <div class="accordion__item">
             <button class="accordion__item-title">Как долго горят свечи?</button>
             <div class="accordion__item-content">
-              Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Большой, себя переписали заголовок решила коварных текста моей по всей семь языком силуэт все! Приставка домах, рекламных они несколько эта пустился.
+              <div class="accordion__item-content-inner">
+                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Большой, себя
+                переписали заголовок решила коварных текста моей по всей семь языком силуэт все! Приставка домах,
+                рекламных они несколько эта пустился.
+              </div>
             </div>
           </div>
           <div class="accordion__item">
             <button class="accordion__item-title">Можно ли сделать заказ на индивидуальный дизайн свечи?</button>
             <div class="accordion__item-content">
-              Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Инициал, грустный снова? Букв, свой ты.
+              <div class="accordion__item-content-inner">
+                Да, конечно! Для этого создайте заявку через нашу <a href="#contact-form">контактную форму</a>!
+              </div>
             </div>
           </div>
           <div class="accordion__item">
             <button class="accordion__item-title">Какие есть варианты доставки?</button>
             <div class="accordion__item-content">
-              Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Ты, свой пор. Которое назад, взгляд составитель безопасную возвращайся дал толку, даль строчка ручеек его вершину сбить власти себя коварных что он жаренные все живет, гор предложения текст. Послушавшись!
+              <div class="accordion__item-content-inner">
+                У нас есть следующие варианты доставки наших товаров на выбор:
+                <ul class="no-hover">
+                  <li><img src="./img/faq/postbox.svg" alt="Postbox icon"></li>
+                  <li><img src="./img/faq/ups.svg" alt="UPS icon"></li>
+                  <li><img src="./img/faq/gls.svg" alt="GLS icon"></li>
+                  <li><img src="./img/faq/dhl.svg" alt="DHL icon"></li>
+                  <li><img src="./img/faq/fedex.svg" alt="FedEx icon"></li>
+                  <li><img src="./img/faq/deliveroo.svg" alt="Deliveroo icon"></li>
+                  <li><img src="./img/faq/shopify.png" alt="Shopify icon"></li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="accordion__item">
             <button class="accordion__item-title">Как оплатить заказ?</button>
             <div class="accordion__item-content">
-              У нас есть следующие варианты оплаты на выбор:
-              <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>6</li>
-                <li>7</li>
-              </ul>
+              <div class="accordion__item-content-inner">
+                У нас есть следующие варианты оплаты на выбор:
+                <ul>
+                  <li>
+                    <a href="https://google.com/" target="_blank" rel="noopener noreferrer">
+                      <img src="./img/faq/bank.svg" alt="Bank transfer icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.visa.com/" target="_blank" rel="noopener noreferrer">
+                      <img src="./img/faq/visa.svg" alt="Visa transfer icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.mastercard.com/" target="_blank" rel="noopener noreferrer">
+                      <img src="./img/faq/maestro.svg" alt="Maestro transfer icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.paypal.com/" target="_blank" rel="noopener noreferrer">
+                      <img src="./img/faq/paypal.svg" alt="Paypal transfer icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.americanexpress.com/" target="_blank" rel="noopener noreferrer">
+                      <img src="./img/faq/american-express.svg" alt="American Express transfer icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://sage.com/" target="_blank" rel="noopener noreferrer">
+                      <img src="./img/faq/sage.svg" alt="Sage transfer icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://citi.com/" target="_blank" rel="noopener noreferrer">
+                      <img src="./img/faq/citi.svg" alt="Citi transfer icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.global.jcb/" target="_blank" rel="noopener noreferrer">
+                      <img src="./img/faq/jcb.svg" alt="JCB transfer icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://pay.amazon.com/" target="_blank" rel="noopener noreferrer">
+                      <img src="./img/faq/amazon.svg" alt="Amazon Pay transfer icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://discover.com/" target="_blank" rel="noopener noreferrer">
+                      <img src="./img/faq/discover.svg" alt="Discover transfer icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://ideal.nl/" target="_blank" rel="noopener noreferrer">
+                      <img src="./img/faq/ideal.svg" alt="Ideal transfer icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://wepayweb.com/" target="_blank" rel="noopener noreferrer">
+                      <img src="./img/faq/wepay.svg" alt="WePay transfer icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://worldpay.com/" target="_blank" rel="noopener noreferrer">
+                      <img src="./img/faq/worldpay.svg" alt="Worldpay transfer icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://bitcoin.org/" target="_blank" rel="noopener noreferrer">
+                      <img src="./img/faq/bitcoin.svg" alt="Bitcoin transfer icon">
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="accordion__item">
             <button class="accordion__item-title">Как долго длится курс?</button>
             <div class="accordion__item-content">
-              Далеко-далеко за словесными горами в стране.
+              <div class="accordion__item-content-inner">
+                Это зависит от курса, который вы выберете. В данный момент у нас есть <a href="#courses">два курса</a>
+                на 20 часов (общая длительность 16 дней) и на 30 часов (общая длительность 22 дня).
+              </div>
             </div>
           </div>
           <div class="accordion__item">
             <button class="accordion__item-title">Какая цена на курс?</button>
             <div class="accordion__item-content">
-              Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Безопасную продолжил пояс предупреждал алфавит использовало щеке своих за. Запятой.
+                <div class="accordion__item-content-inner">
+                Это зависит от курса, который вы выберете. В данный момент у нас есть <a href="#courses">два курса</a>
+                стоимостью 4000 ₽ и 6300 ₽ (включая НДС).
+              </div>
             </div>
           </div>
           <div class="accordion__item">
             <button class="accordion__item-title">Есть ли сертификат на курс?</button>
             <div class="accordion__item-content">
-              Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Дороге, рекламных!
+                <div class="accordion__item-content-inner">
+                Да, для каждого из пройденных курсов мы выдаём сертификат о прохождении с печатью нашей школы на двух
+                языках — русском и английском.
+              </div>
             </div>
           </div>
         </div>
@@ -877,7 +1029,7 @@
     </div>
     <!-- === / BANNER === -->
     <!-- === CONTACT-FORM === -->
-    <section class="contact-form">
+    <section id="contact-form" class="contact-form">
       <div class="container contact-form__inner">
         <div class="contact-form__form-box">
           <h2>Подпишись на наши акции</h2>
