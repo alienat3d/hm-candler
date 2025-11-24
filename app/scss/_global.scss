@@ -107,6 +107,10 @@ body {
   transform: translate(3px, -3px);
 }
 
+.title-box{
+  position: relative;
+  display: inline-block;
+}
 .title {
   @include title-font-400;
   margin-bottom: 15px;
@@ -118,6 +122,35 @@ body {
   @media (max-width: $mobile-large-width) {
     font-size: 18px;
   }
+}
+.title-box:has(.title) > .title {
+  position: relative;
+}
+.tooltip-asterisk {
+  position: absolute;
+  top: -3px;
+  right: -16px;
+  width: 16px;
+  height: 15px;
+  color: $light-taupe;
+  transition: color ease $fast-transition;
+}
+
+.tooltip {
+  position: absolute;
+  top: -15px;
+  right: -235px;
+  opacity: 0;
+  min-width: 100px;
+  color: $accent-color;
+  transition: opacity ease $fast-transition;
+}
+.tooltip-asterisk:hover {
+  cursor: help;
+  color: $accent-color;
+}
+.tooltip--show {
+  opacity: 1;
 }
 
 .swiper-pagination-bullets .swiper-pagination-bullet {
