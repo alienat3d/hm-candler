@@ -1,8 +1,19 @@
 .faq {
   padding-bottom: 150px;
+
+  .title-box {
+    @media (max-width: 714px) {
+      margin-bottom: 7px;
+    }
+  }
 }
 
 .faq__inner {
   display: flex;
   column-gap: 36px;
+
+  @media (max-width: 714px) {
+    display: block;
+    text-align: center;
+  }
 }

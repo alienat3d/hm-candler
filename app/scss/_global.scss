@@ -134,6 +134,12 @@ body {
   height: 15px;
   color: $light-taupe;
   transition: color ease $fast-transition;
+
+  @media (max-width: $tablet-width) {
+    right: -13px;
+    width: 14px;
+    height: 13px;
+  }
 }
 
 .tooltip {
@@ -144,6 +150,10 @@ body {
   min-width: 100px;
   color: $accent-color;
   transition: opacity ease $fast-transition;
+
+  @media (max-width: $tablet-width) {
+    right: -200px;
+  }
 }
 .tooltip-asterisk:hover {
   cursor: help;
