@@ -18,6 +18,12 @@
   @media (max-width: $tablet-width) {
     background-image: url("../img/banner/banner-tablet.jpg");
   }
+  @media (max-width: $mobile-large-width) {
+    background-image: url("../img/banner/banner-mobile-lg.jpg");
+  }
+  @media (max-width: $mobile-small-width) {
+    background-image: url("../img/banner/banner-mobile-sm.jpg");
+  }
 }
 .banner .title {
   margin-bottom: 0;
