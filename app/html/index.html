@@ -1029,9 +1029,15 @@
     <section id="contact-form" class="contact-form">
       <div class="container contact-form__inner">
         <div class="contact-form__form-box">
-          <h2>Подпишись на наши акции</h2>
-          <form>
-            <button>Подписаться</button>
+          <h2 class="title contact-form__title">Подпишись на наши акции</h2>
+          <form class="contact-form__form">
+            <label class="contact-form__label" for="name">
+              <input id="name" class="contact-form__input" type="text" name="name" placeholder="Имя" autocomplete="name">
+            </label>
+            <label class="contact-form__label" for="email">
+              <input id="email" class="contact-form__input" type="email" name="email" placeholder="E-mail" autocomplete="email">
+            </label>
+            <button class="button contact-form__button" type="submit">Подписаться</button>
           </form>
         </div>
         <div class="contact-form__decor-pic"></div>
