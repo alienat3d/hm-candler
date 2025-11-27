@@ -9,7 +9,7 @@
   @media (max-width: $laptop-width) {
     margin-bottom: 250px;
   }
-  @media (max-width: $mobile-large-width) {
+  @media (max-width: 600px) {
     margin-top: 35px;
     margin-bottom: 130px;
   }
@@ -35,8 +35,14 @@
     width: 230px;
     padding-top: 89px;
   }
-  @media (max-width: $mobile-large-width) {
+  @media (max-width: 600px) {
+    padding-top: 50px;
+  }
+  @media (max-width: 510px) {
     width: 180px;
+    padding-top: 30px;
+  }
+  @media (max-width: $mobile-large-width) {
     padding-top: 69px;
   }
   @media (max-width: $mobile-small-width) {
@@ -110,10 +116,10 @@
   @media (max-width: $tablet-width) {
     right: -164px;
   }
-  @media (max-width: 601px) {
+  @media (max-width: 680px) {
     right: -247px;
   }
-  @media (max-width: $mobile-large-width) {
+  @media (max-width: 600px) {
     right: 0;
     width: 310px;
     height: 309px;
@@ -144,7 +150,7 @@
     width: 405px;
     height: 402px;
   }
-  @media (max-width: $mobile-large-width) {
+  @media (max-width: 600px) {
     top: -14px;
     left: 24px;
     width: 302px;
@@ -175,7 +181,7 @@
   filter: brightness(0.8);
   transition: filter 0.3s linear;
   animation: brighten $total-duration ease-in-out infinite;
-  @media (max-width: $mobile-large-width) {
+  @media (max-width: 600px) {
     animation: none;
     filter: brightness(1);
   }
@@ -195,7 +201,7 @@
     height: 214px;
     background-image: url("../img/top/laptop-bg-part-1.png");
   }
-  @media (max-width: $mobile-large-width) {
+  @media (max-width: 600px) {
     bottom: -14px;
     left: -8px;
     width: 152px;
@@ -225,7 +231,7 @@
     height: 332px;
     background-image: url("../img/top/laptop-bg-part-2.png");
   }
-  @media (max-width: $mobile-large-width) {
+  @media (max-width: 600px) {
     top: 0;
     left: 84px;
     width: 199px;
@@ -251,7 +257,7 @@
     height: 199px;
     background-image: url("../img/top/laptop-bg-part-3.png");
   }
-  @media (max-width: $mobile-large-width) {
+  @media (max-width: 600px) {
     display: none;
   }
 }
@@ -270,7 +276,7 @@
     height: 240px;
     background-image: url("../img/top/laptop-bg-part-4.png");
   }
-  @media (max-width: $mobile-large-width) {
+  @media (max-width: 600px) {
     display: none;
   }
 }
@@ -289,7 +295,7 @@
     height: 221px;
     background-image: url("../img/top/laptop-bg-part-5.png");
   }
-  @media (max-width: $mobile-large-width) {
+  @media (max-width: 600px) {
     display: none;
   }
 }
@@ -308,7 +314,7 @@
     height: 208px;
     background-image: url("../img/top/laptop-bg-part-6.png");
   }
-  @media (max-width: $mobile-large-width) {
+  @media (max-width: 600px) {
     display: none;
   }
 }
@@ -326,7 +332,7 @@
   @media (max-width: $tablet-width) {
     left: 194px;
   }
-  @media (max-width: $mobile-large-width) {
+  @media (max-width: 600px) {
     top: -10px;
     left: auto;
     right: 0;
