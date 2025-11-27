@@ -35,7 +35,7 @@
   position: relative;
 }
 .card__pic {
-  margin-bottom: 8px;
+  display: block;
 }
 .card__image-sticker {
   @include title-font-400;
