@@ -82,14 +82,14 @@ body {
 }
 
 .button {
+  @include main-font-600;
   padding: 20px 46px;
   background-color: $bright-accent-color;
-  @include main-font-600;
   font-size: 14px;
   color: $btn-text-color;
   box-shadow: 3px -3px 1.5px 0.5px rgba(187, 165, 152);
   transition: box-shadow 0.1s ease-in, transform 0.1s ease-in,
-    background-color $fast-transition linear;
+    background-color $fast-transition linear, color $fast-transition linear;
 
   @media (max-width: $tablet-width) {
     padding: 15px 31px;
@@ -100,7 +100,8 @@ body {
   }
 }
 .button:hover {
-  background-color: darken($bright-accent-color, 5%);
+  color: $beige-color;
+  background-color: $accent-color;
 }
 .button:active {
   box-shadow: 0px 0px 0px 0px rgba(187, 165, 152);
