@@ -22,6 +22,9 @@
   background-color: #fff;
   line-height: 1.3;
 }
+.accordion__item:last-of-type {
+  margin-bottom: 0;
+}
 
 .accordion__item-title {
   @include title-font-400;

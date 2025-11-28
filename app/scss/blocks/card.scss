@@ -10,6 +10,11 @@
     margin-bottom: 40px;
   }
 }
+.products .card {
+  @media (max-width: 856px) {
+    max-width: 240px;
+  }
+}
 .team .card {
   margin: 0;
   max-width: 270px;
@@ -36,6 +41,10 @@
 }
 .card__pic {
   display: block;
+  margin: 0 auto;
+}
+.products .card__pic {
+  margin: 0 auto 15px;
 }
 .card__image-sticker {
   @include title-font-400;

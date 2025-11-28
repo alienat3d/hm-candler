@@ -15,19 +15,18 @@
     gap: 15px;
   }
   @media (max-width: $tablet-width) {
-    padding-bottom: 120px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   @media (max-width: 714px) {
     display: block;
-    padding-bottom: 80px;
   }
-  @media (max-width: $mobile-large-width) {
-    padding-bottom: 60px;
+  @media (max-width: 601px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
-.products .cards__inner {
-  padding-top: 0;
-}
+
 .stages .cards__inner {
   @media (max-width: 1231px) {
     grid-template-columns: 300px auto;
@@ -40,6 +39,7 @@
     grid-template-columns: 200px auto;
   }
 }
+
 .courses .cards__inner {
   padding-bottom: 160px;
 
@@ -50,14 +50,17 @@
     grid-template-columns: 220px auto;
     justify-content: space-between;
   }
+  @media (max-width: $tablet-width) {
+    padding-bottom: 80px;
+  }
   @media (max-width: 760px) {
     display: block;
-    padding-bottom: 80px;
   }
   @media (max-width: 714px) {
     padding-bottom: 50px;
   }
 }
+
 .team .cards__inner {
   column-gap: 55px;
 
@@ -97,6 +100,9 @@
     display: block;
     padding-top: 47px;
     padding-bottom: 40px;
+  }
+  @media (max-width: 601px) {
+    padding-top: 0;
   }
 }
 .certificates .cards__inner {

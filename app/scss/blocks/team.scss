@@ -1,15 +1,15 @@
 .team {
   background-color: $alt-bg-color;
-  color: #FFFFFF;
+  color: #fff;
 
   @media (max-width: 1140px) {
     padding-bottom: 135px;
   }
   @media (max-width: $tablet-width) {
-    padding-top: 50px;
-    padding-bottom: 119px;
+    padding-bottom: 70px;
   }
-  @media (max-width: 600px) {
-    padding-bottom: 89px;
+  @media (max-width: 601px) {
+    padding-top: 20px;
+    padding-bottom: 59px;
   }
 }
