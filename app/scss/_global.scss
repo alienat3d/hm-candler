@@ -44,6 +44,7 @@ button {
 
 body {
   @include main-font-400;
+  position: relative;
   min-width: 320px;
   background-color: $main-bg-color;
   font-size: 14px;
