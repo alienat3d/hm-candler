@@ -1048,10 +1048,10 @@
           <h2 class="title contact-form__title">Подпишись на наши акции</h2>
           <form class="contact-form__form">
             <label class="contact-form__label" for="name">
-              <input id="name" class="contact-form__input" type="text" name="name" placeholder="Имя" autocomplete="name">
+              <input id="name" class="contact-form__input" type="text" name="name" placeholder="Имя" autocomplete="name" required>
             </label>
             <label class="contact-form__label" for="email">
-              <input id="email" class="contact-form__input" type="email" name="email" placeholder="E-mail" autocomplete="email">
+              <input id="email" class="contact-form__input" type="email" name="email" placeholder="E-mail" autocomplete="email" required>
             </label>
             <button class="button contact-form__button" type="submit">Подписаться</button>
           </form>
@@ -1061,12 +1061,12 @@
     </section>
     <!-- === / CONTACT-FORM === -->
   </main>
-  <!-- === MODAL === -->
-  @@include('blocks/modal.html')
-  <!-- === / MODAL === -->
   <!-- === FOOTER === -->
   @@include('blocks/footer.html')
   <!-- === / FOOTER === -->
+  <!-- === MODAL === -->
+  @@include('blocks/modal.html')
+  <!-- === / MODAL === -->
 </body>
 
 </html>

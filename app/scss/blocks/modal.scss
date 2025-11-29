@@ -5,10 +5,18 @@
   right: 0;
   bottom: 0;
   left: 0;
-  display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(#000, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  transition: opacity $regular-transition, visibility 0s linear $regular-transition;
+}
+.modal.modal--show {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity $regular-transition, visibility 0s linear 0s;
 }
 
 .modal__inner {
